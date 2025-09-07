@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nintendo Switch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="games.css">
+</head>
+<body>
+  <div class="switch-wrap">
+    <div class="joycon left">
+      <div class="btn"></div><div class="btn"></div><div class="btn"></div><div class="btn"></div>
+    </div>
+    <div class="joycon right">
+      <div class="btn"></div><div class="btn"></div><div class="btn"></div><div class="btn"></div>
+    </div>
+
+    <div class="switch-body">
+      <div class="screen">
+        <!-- Top Bar -->
+        <div class="topbar">
+          <div class="status" aria-label="system status">
+            <span class="icon" title="wifi" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 8.5C8.627-0.833 22-0.833 28 8.5" transform="scale(.75) translate(-1,5)" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+                <path d="M5 12c5-5 13-5 18 0" transform="scale(.95) translate(-1,2)" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+                <circle cx="12" cy="18" r="2" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="icon" title="battery" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                <rect x="20" y="10" width="2" height="4" rx="1" fill="currentColor"/>
+                <rect x="4" y="8" width="14" height="8" rx="1" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="time" id="time">--:--</div>
+        </div>
+
+      <!-- Game Genres Section -->
+  <section class="categories">
+    <h2>Game Genres</h2>
+    <div class="buttons">
+      <button class="category red action">Action</button>
+      <button class="category forestgreen adventure">Adventure</button>
+      <button class="category purple rpg">RPG</button>
+      <button class="category gold simulation">Simulation</button>
+      <button class="category brown strategy">Strategy</button>
+      <button class="category limegreen sports">Sports</button>
+      <button class="category orange puzzle">Puzzle</button>
+      <button class="category crimson horror">Horror</button>
+      <button class="category gray sandbox">Sandbox</button>
+      <button class="category orange sports">Music</button>
+      <button class="category magenta fighting">Fighting</button>
+      <button class="category cyan racing">Racing</button>
+      <button class="category indigo metroidvania">Metroidvania</button>
+      <button class="category teal roguelike">Roguelike</button>
+      <button class="category pink party">Party</button>
+      
+      
+
+
+
+      <button class="category all all">All</button> <!-- "All" button -->
+    </div>
+  </section>
+
+  <!-- Carousel / Games -->
+        <div class="carousel-wrap">
+          <div class="arrow left" id="prevBtn" title="Previous">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="white" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="arrow right" id="nextBtn" title="Next">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="white" stroke-width="2" 
+              stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="carousel" id="carousel" aria-label="Game list" >
+
+            <!-- Gamessssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+            <div class="card" data-title="Advance Wars" 
+            data-description="A turn-based strategy game where players command armies in grid-based combat. 
+            Players must use tactical prowess to capture cities and defeat enemies, balancing resources, units, and terrain. 
+            Known for its depth and strategic complexity, the game set the foundation for the series' appeal."
+            data-platform="Game Boy Advance" 
+            data-release="September 10, 2001"
+            data-genre="strategy">
+              <div class="thumb" style="background-image:url('AdvanceWars.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Advance Wars 1+2 Re-Boot Camp" 
+            data-description="A remake of the first two Advance Wars games, featuring updated visuals, animations, and voiceovers 
+            while keeping the core turn-based tactical gameplay intact. The re-imagining brings the beloved series to a new generation 
+            with accessible mechanics and a revamped multiplayer experience."
+            data-platform="Nintendo Switch" 
+            data-release="April 21, 2023"
+            data-genre="strategy">
+              <div class="thumb" style="background-image:url('AdvanceWars-Reboot.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Advance Wars 2" 
+            data-description="The sequel to Advance Wars, expanding on the original with new characters, units, and an intricate plot. 
+            It introduces weather effects and a more diverse set of strategies, offering an enhanced and even more tactical experience. 
+            Players continue to lead armies on a new campaign to protect the world."
+            data-platform="Game Boy Advance" 
+            data-release="June 23, 2003"
+            data-genre="strategy">
+              <div class="thumb" style="background-image:url('AdvanceWars2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Advance Wars: Days of Ruin" 
+            data-description="A darker, post-apocalyptic entry in the series where players lead a new cast of commanders to survive a world 
+            ravaged by a mysterious calamity. The game introduces a more somber tone, with new mechanics like COs having special abilities that 
+            impact the battlefield."
+            data-platform="Nintendo DS" 
+            data-release="January 21, 2008"
+            data-genre="strategy">
+              <div class="thumb" style="background-image:url('AdvanceWars-Days.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Advance Wars: Dual Strike" 
+            data-description="This series introduces dual Commanding Officers (COs) that can be switched during battle, creating complex 
+            strategic layers. The game features both the traditional single-player campaign and a robust multiplayer mode, further building 
+            on the series' tactical depth."
+            data-platform="Nintendo DS" 
+            data-release="June 23, 2005"
+            data-genre="strategy">
+              <div class="thumb" style="background-image:url('AdvanceWars-Dual.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Amnesia Collection" 
+            data-description="A collection of the critically acclaimed Amnesia series, which includes The Dark Descent, Justine, 
+            and A Machine for Pigs. These psychological horror games blend immersive environments with mind-bending puzzles, forcing players 
+            to confront the terror of the unknown while battling their own sanity."
+            data-platform="Nintendo Switch" 
+            data-release="September 12, 2019"
+            data-genre="horror, puzzle, adventure">
+              <div class="thumb" style="background-image:url('Amnesia.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Animal Crossing" 
+            data-description="The game that introduced the beloved franchise to the world. In Animal Crossing for the GameCube, 
+            players move to a rural village, interact with quirky anthropomorphic animals, and engage in laid-back activities such as fishing, 
+            fossil hunting, and home decorating. It's a virtual sandbox where time passes with real-world seasons."
+            data-platform="GameCube" 
+            data-release="April 14, 2001"
+            data-genre="simulation">
+              <div class="thumb" style="background-image:url('AnimalCrossing.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Animal Crossing: City Folk" 
+            data-description="A refined version of Animal Crossing, now with a bustling city to explore. Players can shop, interact with neighbors,
+             and take part in seasonal events. The online mode allows for friends to visit each other's villages, and the game includes a more 
+             vibrant set of activities and customization."
+            data-platform="Wii" 
+            data-release="November 16, 2008"
+            data-genre="simulation">
+              <div class="thumb" style="background-image:url('AnimalCrossing-City.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Animal Crossing: New Horizons" 
+            data-description="A major installment where players move to a deserted island and craft their own paradise. The game offers new ways 
+            to personalize the environment, including crafting furniture and designing the island layout. It also supports online play, allowing
+             players to visit and share their islands with friends."
+            data-platform="Nintendo Switch" 
+            data-release="March 20, 2020"
+            data-genre="simulation">
+              <div class="thumb" style="background-image:url('AnimalCrossing-New.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Animal Crossing: New Leaf" 
+            data-description="New Leaf introduces players as the town's mayor, giving them more responsibility and control over the village's 
+            development. This includes building public works projects, customizing the town layout, and running the show, all while maintaining 
+            the series' signature charm."
+            data-platform="Nintendo 3DS" 
+            data-release="November 8, 2012"
+            data-genre="simulation">
+              <div class="thumb" style="background-image:url('AnimalCrossing-Leaf.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Animal Crossing: Wild World" 
+            data-description="The second installment for the handheld, Wild World brings the iconic village simulation to the Nintendo DS, now 
+            with online connectivity. Players can visit other towns, trade items, and interact with the characters in a more dynamic way. The 
+            charm of the original was retained with fresh touches."
+            data-platform="Nintendo DS" 
+            data-release="November 23, 2005"
+            data-genre="simulation">
+              <div class="thumb" style="background-image:url('AnimalCrossing-Wild.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Assassin's Creed: The Ezio Collection" 
+            data-description="A collection of Assassin's Creed II, Brotherhood, and Revelations, following the life of Ezio Auditore, one of the 
+            franchise's most beloved characters. Set in the Renaissance and Ottoman Empire, the collection remasters these games with updated 
+            visuals, and improved mechanics for modern consoles, offering a cinematic historical adventure."
+            data-platform="Nintendo Switch" 
+            data-release="February 17, 2021"
+            data-genre="action, adventure">
+              <div class="thumb" style="background-image:url('Assassin’sCreed.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Battalion Wars" 
+            data-description="A hybrid between real-time strategy and action, Battalion Wars lets players control squads of soldiers and vehicles
+             in large-scale battles. Players must strategically command units on the battlefield while also participating directly in combat, 
+             offering a dynamic mix of tactical and action gameplay."
+            data-platform="GameCube" 
+            data-release="September 19, 2005"
+            data-genre="strategy, action">
+              <div class="thumb" style="background-image:url('BattalionWars.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Battalion Wars 2" 
+            data-description="The sequel improves on its predecessor with more fluid combat and additional multiplayer options. The game features 
+            a wider range of units, including more vehicles, and new co-op and competitive modes. Players continue to lead armies in real-time 
+            strategy while also engaging in direct combat."
+            data-platform="Wii" 
+            data-release="October 29, 2007"
+            data-genre="strategy, action">
+              <div class="thumb" style="background-image:url('BattalionWars2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Big Brain Academy" 
+            data-description="A brain-training game that challenges players with a variety of mini-games designed to stimulate different parts of
+            the brain. Players can test their memory, math, and logic skills, competing for high scores in an educational yet entertaining package."
+            data-platform="Nintendo DS" 
+            data-release="June 30, 2005"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('BigBrainAcademy.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Big Brain Academy: Wii Degree" 
+            data-description="The Wii version of Big Brain Academy introduces motion controls and more interactive mini-games. Players can 
+            challenge friends or work through puzzles in a more casual, social setting. The game offers a fun and engaging way to boost mental 
+            acuity."
+            data-platform="Wii" 
+            data-release="April 26, 2007"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('BigBrainAcademyWii.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="BoxBoy!" 
+            data-description="A minimalist puzzle platformer where players control a small cube named Qbby, navigating through increasingly complex
+            levels filled with obstacles. The game's simple mechanics involve creating boxes to solve puzzles and overcome challenges."
+            data-platform="Nintendo 3DS" 
+            data-release="January 14, 2015"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('BoxBoy!.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="BoxBoy! + BoxGirl!" 
+            data-description="The sequel to BoxBoy!, this game adds a new co-op mode where players can control both Qbby and his friend, BoxGirl, 
+            as they solve puzzles together. The game builds on the original's box-building mechanics with new challenges and cooperative gameplay."
+            data-platform="Nintendo Switch" 
+            data-release="April 26, 2019"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('BoxBoy!+BoxGirl!.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Cadence of Hyrule" 
+            data-description="A rhythm-based action game set in the Legend of Zelda universe, blending music with dungeon crawling. Players control
+            Link and Zelda as they explore a musical Hyrule, with every action timed to the beat of the music. It's an unexpected yet captivating
+            fusion of genres."
+            data-platform="Nintendo Switch" 
+            data-release="June 13, 2019"
+            data-genre="action, music, adventure">
+              <div class="thumb" style="background-image:url('CadenceofHyrule.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Castlevania" 
+            data-description="The game that introduced the legendary Castlevania series, players take on the role of Simon Belmont, navigating 
+            through Dracula's castle to defeat monsters and bosses. Known for its atmospheric music and challenging platforming, this classic 
+            helped define the action-platformer genre."
+            data-platform="NES" 
+            data-release="September 26, 1986"
+            data-genre="action">
+              <div class="thumb" style="background-image:url('Castlevania.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Castlevania: Aria of Sorrow" 
+            data-description="A standout entry in the series, Aria of Sorrow introduces the 'Tactical Soul' system, allowing players to collect 
+            and use the abilities of defeated enemies. The game's modern setting and refined gameplay made it one of the best Castlevania titles 
+            on the Game Boy Advance."
+            data-platform="Game Boy Advance" 
+            data-release="May 6, 2003"
+            data-genre="action, adventure, metroidvania">
+              <div class="thumb" style="background-image:url('Castlevania-Aria.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Castlevania: Dawn of Sorrow" 
+            data-description="A direct sequel to Aria of Sorrow, Dawn of Sorrow refines the Tactical Soul system and introduces a new 'Magic Seal' 
+            mechanic to defeat bosses. With tighter controls and a gripping story, it remains one of the most beloved games in the Castlevania 
+            series."
+            data-platform="Nintendo DS" 
+            data-release="August 25, 2005"
+            data-genre="action, adventure, metroidvania">
+              <div class="thumb" style="background-image:url('Castlevania-Dawn.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Castlevania: Order of Ecclesia" 
+            data-description="Order of Ecclesia features a new protagonist, Shanoa, who uses the “Glyph” system to gain powers from enemies. It 
+            deviates from the traditional Castlevania formula with a more RPG-like progression system and a darker narrative."
+            data-platform="Nintendo DS" 
+            data-release="October 21, 2008"
+            data-genre="action, adventure, metroidvania">
+              <div class="thumb" style="background-image:url('Castlevania-Order.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Castlevania III: Dracula's Curse" 
+            data-description="A prequel to the original Castlevania, Dracula's Curse introduces multiple playable characters, branching paths, and
+             different endings, making it one of the most replayable titles in the series. Its difficulty and non-linear design set it apart from 
+             its predecessors."
+            data-platform="NES" 
+            data-release="December 22, 1989"
+            data-genre="action, adventure, metroidvania">
+              <div class="thumb" style="background-image:url('Castlevania3.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Chronicles Xenoblade" 
+            data-description="Xenoblade Chronicles is a vast open-world RPG that blends real-time combat with strategic positioning. Set in a world 
+            where giant mechs battle on the bodies of titanic creatures, the game features a deep story with themes of fate and free will."
+            data-platform="Wii, Nintendo Switch (Definitive Edition)" 
+            data-release="June 10, 2010"
+            data-genre="rpg, action, adventure">
+              <div class="thumb" style="background-image:url('ChroniclesXenoblade.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Crashmo" 
+            data-description="A follow-up to Pushmo, Crashmo introduces new puzzle mechanics involving gravity and movable blocks. Players must 
+            solve puzzles to guide characters to the top of each level. The game offers challenging puzzles and a unique physics-based twist."
+            data-platform="Nintendo 3DS" 
+            data-release="January 14, 2015"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('Crashmo.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Crypt of the NecroDancer" 
+            data-description="A rhythm-based dungeon crawler where players must move and attack in time with the music. Featuring a unique blend 
+            of rhythm and rogue-like mechanics, the game challenges players to navigate randomly generated dungeons while syncing actions to the
+            beat."
+            data-platform="Nintendo Switch" 
+            data-release="April 23, 2015"
+            data-genre="roguelike, music">
+              <div class="thumb" style="background-image:url('CryptoftheNecroDancer.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dark Souls: Remastered" 
+            data-description="The critically acclaimed action RPG Dark Souls makes its way to the Nintendo Switch in a remastered version. Featuring 
+            brutal difficulty, intricate world-building, and deep lore, the game tests players' patience and skill through punishing combat and 
+            exploration."
+            data-platform="Nintendo Switch" 
+            data-release="October 19, 2018"
+            data-genre="action, rpg">
+              <div class="thumb" style="background-image:url('DarkSouls-Remastered.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dead Cells" 
+            data-description="A rogue-like, Metroidvania-inspired action-platformer where players must explore procedurally generated levels, 
+            fighting enemies and bosses along the way. The game is known for its fast-paced combat, fluid movement, and constant progression, 
+            with a variety of weapons and upgrades to experiment with."
+            data-platform="Nintendo Switch" 
+            data-release="August 7, 2018"
+            data-genre="roguelike, action">
+              <div class="thumb" style="background-image:url('DeadCells.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Don't Starve" 
+            data-description="A survival game where players must gather resources, craft tools, and fend off monstrous creatures in an unforgiving
+             world. The game features an art style reminiscent of Tim Burton and offers a mix of adventure, exploration, and strategic resource
+             management."
+            data-platform="Nintendo Switch" 
+            data-release="April 12, 2018"
+            data-genre="Adventure">
+              <div class="thumb" style="background-image:url('DontStarve.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Konga" 
+            data-description="A rhythm game that uses the GameCube's special bongos peripheral. Players must tap, clap, or slap the bongos in time
+             with the music to score points. Featuring iconic Nintendo music, the game provides an interactive and fun musical experience."
+            data-platform="GameCube" 
+            data-release="November 17, 2003"
+            data-genre="music">
+              <div class="thumb" style="background-image:url('DonkeyKonga.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Konga 2" 
+            data-description="The sequel to Donkey Konga, this game improves on the first with more songs, varied difficulty levels, and multiplayer
+             options. Players once again use the bongos to play through popular tunes, including music from the Donkey Kong franchise."
+            data-platform="GameCube" 
+            data-release="November 8, 2004"
+            data-genre="music">
+              <div class="thumb" style="background-image:url('DonkeyKonga2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Kong" 
+            data-description="Description: A seminal arcade game where players control Mario (then called Jumpman) as he attempts to rescue his 
+            girlfriend from Donkey Kong, the large ape who throws barrels at him. This game established many of the platforming tropes still seen today."
+            data-platform="NES" 
+            data-release="July 9, 1981"
+            data-genre="action">
+              <div class="thumb" style="background-image:url('DonkeyKong.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Kong Country" 
+            data-description="A revolutionary 2D platformer with impressive graphics for its time, Donkey Kong Country introduced the world to
+             Donkey Kong's jungle adventures. Players control Donkey Kong and Diddy Kong as they battle enemies and navigate dangerous landscapes 
+             to recover their stolen banana hoard."
+            data-platform="SNES" 
+            data-release="November 21, 1994"
+            data-genre="action">
+              <div class="thumb" style="background-image:url('DonkeyKongCountry.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Kong Country 2" 
+            data-description="A direct sequel to Donkey Kong Country, this game follows Diddy Kong and his new partner Dixie Kong as they journey 
+            to rescue Donkey Kong from King K. Rool. The game builds on the first with more diverse environments, improved gameplay mechanics, 
+            and a standout soundtrack."
+            data-platform="SNES" 
+            data-release="November 21, 1995"
+            data-genre="action">
+              <div class="thumb" style="background-image:url('DonkeyKongCountry2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Kong Country Returns" 
+            data-description="A revival of the Donkey Kong Country series, Returns brings back the classic 2D platforming action with modern visuals
+             and new gameplay mechanics. Players control Donkey Kong and Diddy Kong as they attempt to recover their stolen banana hoard while 
+             navigating jungle landscapes filled with enemies and hazards."
+            data-platform="Wii" 
+            data-release="November 21, 2010"
+            data-genre="action">
+              <div class="thumb" style="background-image:url('DonkeyKongCountryReturns.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Donkey Kong Country: Tropical Freeze" 
+            data-description="A visually stunning and challenging entry in the Donkey Kong Country series, Tropical Freeze introduces new mechanics
+             like the ability to control different characters with unique abilities. The game features beautiful environments, tight controls, and 
+             tough platforming sequences that make it one of the best entries in the franchise."
+            data-platform="Wii U" 
+            data-release="February 21, 2014"
+            data-genre="action">
+              <div class="thumb" style="background-image:url('DonkeyKongCountry-Tropical.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dragon Ball FighterZ" 
+            data-description="A highly praised 2D fighting game that brings the Dragon Ball universe to life with stunning visuals, fast-paced 
+            combat, and a roster filled with iconic characters from the franchise. Players can engage in epic 3v3 tag-team battles, using a mix 
+            of strategic fighting and flashy special moves."
+            data-platform="Nintendo Switch" 
+            data-release="September 28, 2018"
+            data-genre="fighting">
+              <div class="thumb" style="background-image:url('DragonBallFighterZ.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dragon Quest Builders" 
+            data-description="Combining the RPG elements of Dragon Quest with Minecraft-like crafting and building mechanics, Dragon Quest Builders
+             offers a unique experience where players must rebuild a world destroyed by evil. The game blends action, exploration, and creative 
+             building in a charming 8-bit-inspired world."
+            data-platform="Nintendo Switch" 
+            data-release="March 11, 2016"
+            data-genre="action, adventure ">
+              <div class="thumb" style="background-image:url('DragonQuestBuilders.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dragon Quest Builders 2" 
+            data-description="The sequel expands on the original's sandbox mechanics, adding multiplayer support and an even deeper story. Players
+             must rebuild the world once again, creating structures, gathering resources, and battling enemies, all while uncovering a more 
+             complex narrative."
+            data-platform="Nintendo Switch" 
+            data-release="July 12, 2019"
+            data-genre="action, adventure">
+              <div class="thumb" style="background-image:url('DragonQuestBuilders2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dragon's Dogma: Dark Arisen" 
+            data-description="An enhanced version of the original Dragon's Dogma, Dark Arisen adds more content, including a massive new dungeon.
+             The game blends Western RPG elements with Japanese action, featuring real-time combat, an open world, and the ability to recruit 
+             AI-controlled 'Pawns' to aid in battle."
+            data-platform="Nintendo Switch" 
+            data-release="April 3, 2019"
+            data-genre="action, rpg">
+              <div class="thumb" style="background-image:url('DragonsDogma-Dark.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dr. Mario" 
+            data-description="A classic puzzle game where players must clear viruses by matching them with capsules of the same color. 
+            The game is a combination of match-three mechanics and strategic thinking, offering a fun and challenging experience for players of 
+            all ages."
+            data-platform="NES" 
+            data-release="July 27, 1990"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('DrMario.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dr. Mario 64" 
+            data-description="A 3D iteration of the classic Dr. Mario, this version adds new multiplayer modes and more complex puzzle mechanics. 
+            Players still match capsules to clear viruses but now face new obstacles, with vibrant 3D visuals and a competitive edge in
+            multiplayer."
+            data-platform="Nintendo 64" 
+            data-release="March 26, 2001"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('DrMario64.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Dr. Mario World" 
+            data-description="A mobile adaptation of Dr. Mario, where players solve puzzles by eliminating viruses using color-matching capsules. 
+            The game introduces new mechanics and daily challenges, with the option to use special power-ups and compete against friends for high 
+            scores."
+            data-platform="Nintendo 3DS" 
+            data-release="July 10, 2019"
+            data-genre="puzzle">
+              <div class="thumb" style="background-image:url('DrMarioWorld.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Diddy Kong Racing" 
+            data-description="A kart-racing game featuring Diddy Kong and his friends as they race through colorful tracks filled with hazards, 
+            power-ups, and secrets. The game stands out by offering unique vehicles such as hovercrafts and planes, and it includes a story mode 
+            with boss fights and exploration."
+            data-platform="Nintendo 64" 
+            data-release="November 24, 1997"
+            data-genre="racing, adventure">
+              <div class="thumb" style="background-image:url('DiddyKongRacing.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Enter the Gungeon" 
+            data-description="A chaotic bullet-hell roguelike where players fight through procedurally generated dungeons to find a gun that can 
+            kill the past. Dodge, shoot, and collect bizarre weapons in a fast-paced, ever-changing environment. The Switch version includes 
+            all DLC and co-op mode."
+            data-platform="Nintendo Switch" 
+            data-release="December 14, 2017"
+            data-genre="roguelike, action">
+              <div class="thumb" style="background-image:url('EnterTheGungeon.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Excitebike" 
+            data-description="Classic side-scrolling motocross racing where players avoid hazards, manage engine heat, and race for the best time.
+             Includes a design mode for creating custom tracks. A defining 8-bit racing game with simple yet deep mechanics."
+            data-platform="NES" 
+            data-release="November 30, 1984"
+            data-genre="racing">
+              <div class="thumb" style="background-image:url('ExciteBike.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Excitebike 64" 
+            data-description="A 3D motocross racer with tricks, realistic physics, and season-based gameplay. Features six riders, multiple 
+            environments, and mini-games. A modern reimagining of the original Excitebike with expanded gameplay and depth."
+            data-platform="Nintendo 64" 
+            data-release="May 2, 2000"
+            data-genre="racing">
+              <div class="thumb" style="background-image:url('ExciteBike64.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="ExciteTruck" 
+            data-description="Tilt-controlled arcade racing with big trucks and massive stunts. Players race through exotic environments, pulling
+             off mid-air tricks and terrain-altering boosts to earn high scores. A high-speed, motion-driven launch title for the Wii."
+            data-platform="Wii" 
+            data-release="November 19, 2006"
+            data-genre="racing">
+              <div class="thumb" style="background-image:url('ExciteTruck.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Excitebots: Trick Racing" 
+            data-description="Features robot animal vehicles performing stunts, racing, and wild mini-games like bowling and pie-throwing. Builds 
+            on ExciteTruck's gameplay with added absurdity and creative gameplay elements. Only released in North America."
+            data-platform="Wii" 
+            data-release="April 20, 2009"
+            data-genre="Racing">
+              <div class="thumb" style="background-image:url('Excitebots-Trick.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fatal Frame II: Crimson Butterfly" 
+            data-description="Twin sisters explore a haunted village using a mystical camera to fight ghosts. The Wii edition adds motion controls,
+             new endings, and a third-person view, enhancing the original's chilling horror."
+            data-platform="Wii" 
+            data-release="June 27, 2012"
+            data-genre="Horror">
+              <div class="thumb" style="background-image:url('FatalFrame2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fatal Frame: Maiden of Black Water" 
+            data-description="Explore Mount Hikami using the Camera Obscura to battle spirits. The Switch remaster adds upgraded visuals, Photo 
+            Mode, and costumes. A modern update of the original Wii U horror game."
+            data-platform="Wii" 
+            data-release="April 20, 2009"
+            data-genre="Horror">
+              <div class="thumb" style="background-image:url('FatalFrame-maiden.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem: The Blazing Blade" 
+            data-description="A tactical strategy RPG introducing Western fans to Fire Emblem, this prequel tells intertwined stories of Lyn, Eliwood, and Hector. It features a prologue-style tutorial with a shifting narrative and deep relationships. Its uniqueness lies in its introduction to the series outside Japan and lasting influence on future character-driven entries."
+            data-platform="Game Boy Advance" 
+            data-release="April 25, 2003"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('EmblemFire-Blazing.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem: Path of Radiance" 
+            data-description="The first 3D Fire Emblem game, starring Ike, this entry deepens emotional storytelling and introduces migration skills, forging, and Skirmishes. Its uniqueness is the fully voiced cutscenes and engaging support system, which paved the way for cinematic narrative strides in later series installments."
+            data-platform="GameCube" 
+            data-release="April 20, 2005"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblem-Path.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem: Radiant Dawn" 
+            data-description="A sequel to Path of Radiance, it continues Ike's story across multiple faction viewpoints and introduces challenging maps with dual-map battles. Its uniqueness is the darker tone, varied perspectives, and difficulty spikes, making it one of the series' more mature and complex strategic experiences."
+            data-platform="Wii" 
+            data-release="February 22, 2007"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblem-Radiant.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem: Sacred Stones" 
+            data-description="Set in the continent of Magvel, this game offers branching character recruitment and grinding by resetting maps for levels. Its uniqueness lies in the free-range exploration between chapters, secret class branching, and post-game grinding—features adored by fans for replayability and flexibility."
+            data-platform="Game Boy Advance" 
+            data-release="November 7, 2004"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblem-Sacred.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem Awakening" 
+            data-description="Reviving the series outside Japan, Awakening introduces casual mode, marriage and child units, and customizable My Castle. Its uniqueness lies in rebooting a declining franchise into global success, blending accessibility with deep tactical depth and vibrant character relationships."
+            data-platform="Nintendo 3DS" 
+            data-release="April 19, 2012"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblemAwakening.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem Echoes: Shadows of Valentia" 
+            data-description="A 3DS remake of Gaiden, featuring isometric and dungeon-deeper routes, town exploration, and monster encounters. Its uniqueness lies in its dual-movement battle system and greater emphasis on exploration and dungeon crawling, making it stand out among grid‑based entries."
+            data-platform="Nintendo 3DS" 
+            data-release="April 20, 2009"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblemEchoes.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem Fates" 
+            data-description="Offering three branching narratives—Birthright, Conquest, and Revelation—this title lets players choose allegiances. Its uniqueness is in player agency to influence plot direction and difficulty, plus marriage supports and My Castle features, providing varied pacing and replayability."
+            data-platform="Nintendo 3DS" 
+            data-release="June 25, 2015"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblemFates.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem Three Houses" 
+            data-description="Set in Fódlan's officer school, it blends school simulation and three diverging war paths. Its uniqueness lies in blending life-sim mechanics—teaching, forging bonds—and high-stakes strategy, delivering robust storytelling and character depth unmatched in prior entries."
+            data-platform="Nintendo Switch" 
+            data-release="July 26, 2019"
+            data-genre="rpg, strategy,simulation">
+              <div class="thumb" style="background-image:url('FireEmblemThreeHouse.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Fire Emblem Engage" 
+            data-description="Celebrating series history, this game introduces Emblem Rings that summon iconic characters. Its uniqueness lies in weaving legacy heroes into play, blending tactical combat with nostalgia, plus streamlined mechanics that make it an inviting yet homage-rich experience."
+            data-platform="Nintendo Switch" 
+            data-release="January 20, 2023"
+            data-genre="rpg, strategy">
+              <div class="thumb" style="background-image:url('FireEmblemEngage.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Five Nights at Freddy's: Help Wanted" 
+            data-description="A VR-style horror collection for Switch, it remixes mini-games and scenarios from the FNAF series into first-person interactive scares. Its uniqueness is adapting terrifying arcade challenges into immersive, handheld horror, offering a fresh twist on the franchise's chilling lore."
+            data-platform="Nintendo Switch" 
+            data-release="August 28, 2019"
+            data-genre="horror, puzzle">
+              <div class="thumb" style="background-image:url('FiveNightsAtFreddy.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="F-Zero" 
+            data-description="A high-speed sci-fi racing classic, pushing hardware with Mode 7 visuals and tight boosting mechanics. Its uniqueness is blistering speeds and tight controls, defining futuristic racing and inspiring later fast-paced franchises."
+            data-platform="SNES" 
+            data-release="November 21, 1990"
+            data-genre="racing">
+              <div class="thumb" style="background-image:url('F-Zero.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="F-Zero X" 
+            data-description="Featuring 3D graphics and up to 30 racers, this N64 entry expands on high-speed racing chaos. Its uniqueness is the competitive, massive multiplayer mode and sense of speed, delivering an adrenaline-fueled experience unmatched on the platform."
+            data-platform="Nintendo 64" 
+            data-release="November 21, 1998"
+            data-genre="racing">
+              <div class="thumb" style="background-image:url('F-ZeroX.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="F-Zero GX" 
+            data-description="Developed alongside F-Zero: Maximum Velocity, this GameCube installment combines deep story mode, extreme difficulty, and enhanced graphics. Its uniqueness lies in its robust single-player Career mode featuring combo-based controls and high difficulty, making it a legendary hardcore racing title."
+            data-platform="GameCube" 
+            data-release="August 25, 2003"
+            data-genre="racing">
+              <div class="thumb" style="background-image:url('F-ZeroGX.jpg');"></div>
+            </div>
+
+
+            <!--- DATA GENRE add UPPER -->
+
+
+
+            <div class="card" data-title="Guitar Hero: On Tour" 
+            data-description="A DS take on Guitar Hero, featuring a guitar grip in place of strum bar and single-handed play. Its uniqueness lies in adapting rhythm gameplay to a handheld form, with slide-pad input and mini-career that deliver music challenge on the go."
+            data-platform="Nintendo DS" 
+            data-release="June 2008"
+            data-genre="Music, Simulation">
+              <div class="thumb" style="background-image:url('GuitarHeroOnTour.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Guitar Hero: World Tour" 
+            data-description="This edition adds drums, vocals, and guitar into band play on Wii. Its uniqueness lies in enabling full band gameplay in a living-room party setting, expanding from single player rhythm to cooperative music performance."
+            data-platform="Wii" 
+            data-release="October 26, 2008"
+            data-genre="Music, Party, Simulation">
+              <div class="thumb" style="background-image:url('GuitarHeroWorldTour.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Hades" 
+            data-description="A roguelike action-RPG where you play as Zagreus escaping the Underworld, wielding boons from Olympic gods and building relationships. Its uniqueness lies in its addictive replay loop, dynamic storytelling, and evolving character bonds that persist across resets, setting a high bar in the roguelike genre."
+            data-platform="Nintendo Switch" 
+            data-release="September 17, 2020"
+            data-genre="Roguelike, Action, RPG">
+              <div class="thumb" style="background-image:url('Hades.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Harvest Moon: A Wonderful Life" 
+            data-description="A heartwarming farming-life sim with life‑stage progression, where players nurture crops, livestock, and relationships in the tranquil valley of Forget‑Me‑Not. Unique for its aging system and family generation mechanics, it immerses you in generational storytelling and pastoral charm."
+            data-platform="GameCube" 
+            data-release="October 24, 2003"
+            data-genre="Simulation, RPG, Strategy">
+              <div class="thumb" style="background-image:url('HarvestMoon-AWonderfulLife.jpg');"></div>
+            </div>
+          
+
+            <div class="card" data-title="Harvest Moon 64" 
+            data-description="An early 3D farming sim where players inherit a rundown farm and revive it through growing, tending animals, and attending town events. Its uniqueness lies in its polygonal world and the introduction of immersive NPC relationships and seasonal festivals."
+            data-platform="Nintendo 64" 
+            data-release="December 3, 1999"
+            data-genre="Simulation, RPG, Strategy">
+              <div class="thumb" style="background-image:url('HarvestMoon64.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Harvest Moon: Friends of Mineral Town" 
+            data-description="A GBA classic featuring deep relationship-building, livestock care, and mining. Its remake on Switch enhances graphics and adds photo mode. Unique for its impactful friendship system, marriage, and accessible portable gameplay with unlockable features."
+            data-platform="Game Boy Advance" 
+            data-release="April 18, 2003"
+            data-genre="Simulation, RPG, Strategy">
+              <div class="thumb" style="background-image:url('HarvestMoon-MineralTown.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Hollow Knight" 
+            data-description="A Metroidvania with precise combat and eerie charm, originally praised for its artistry and depth. Its Switch release retains all content, allowing handheld exploration; unique portable accessibility made this a fan favorite."
+            data-platform="Nintendo Switch" 
+            data-release="June 12, 2018"
+            data-genre="Metroidvania, Action, Adventure, Puzzle">
+              <div class="thumb" style="background-image:url('HollowKnight.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Hollow Knight: Silksong" 
+            data-description="Players control Hornet in this Metroidvania sequel, exploring a new kingdom governed by silk and song. Unique for its acrobatic combat and Hornet’s needle‑and‑silk abilities, it offers refreshed traversal and deeper lore in a haunting realm."
+            data-platform="Nintendo Switch" 
+            data-release="September 4, 2025"
+            data-genre="Metroidvania, Action, Adventure, Puzzle">
+              <div class="thumb" style="background-image:url('HollowKnight-Silksong.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Into the Breach" 
+            data-description="A compact turn‑based strategy where players command mechs to defend cities against alien threats, with highly tactical combat across randomized maps. Its uniqueness lies in its tight design, deliberate time‑reversing mech mechanics, and replay‑worthy challenge."
+            data-platform="Nintendo Switch" 
+            data-release="August 28, 2018"
+            data-genre="Strategy, Puzzle">
+              <div class="thumb" style="background-image:url('IntotheBreach.png');"></div>
+            </div>
+
+
+            <div class="card" data-title="Just Dance 2015" 
+            data-description="A motion‑capture dance rhythm game featuring a library of popular songs and choreographed moves. Unique for its Wii U GamePad visual cues and multiplayer party fun — ideal for active family entertainment."
+            data-platform="Wii U" 
+            data-release="October 21, 2014"
+            data-genre="Music, Party">
+              <div class="thumb" style="background-image:url('JustDance2015.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Just Dance 2020" 
+            data-description="A vibrant rhythm‑dance game featuring global hits, tutorial modes, and kids features. Unique for cross‑platform sharing and expanded song library — keeps parties fresh and accessible."
+            data-platform="Nintendo Switch" 
+            data-release="November 5, 2019"
+            data-genre="Music, Party">
+              <div class="thumb" style="background-image:url('JustDance2020.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Just Dance 2024" 
+            data-description="The latest annual entry with updated tracks, online features, and improved choreography. Unique for its enhanced user interface and subscription-based Dance Pass offering expansive song catalog."
+            data-platform="Nintendo Switch" 
+            data-release="October 24, 2023"
+            data-genre="Music, Party">
+              <div class="thumb" style="background-image:url('JustDance2024.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Kirby's Adventure" 
+            data-description="A charming action‑platformer introducing copy abilities, where Kirby inhales enemies and gains powers to navigate dreamlike levels. Its uniqueness lies in pioneering Kirby’s signature mechanic across bright, imaginative stages."
+            data-platform="NES" 
+            data-release="March 23, 1993"
+            data-genre="Adventure, Action, Puzzle">
+              <div class="thumb" style="background-image:url('KirbysAdventure.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Kirby Super Star" 
+            data-description="A SNES anthology featuring multiple mini‑adventures, co‑op play, and diverse gameplay modes. Its uniqueness lies in its variety—mixing side‑scrollers, strategy segments, and bosses under one colorful package."
+            data-platform="SNES" 
+            data-release="March 21, 1996"
+            data-genre="dventure, Action, Puzzle">
+              <div class="thumb" style="background-image:url('KirbySuperStar.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Kirby and the Forgotten Land" 
+            data-description="Kirby’s first full 3D platformer, sending him into a post‑apocalyptic world with new copy abilities and exploration-driven missions. Unique for its 3D shift and fresh mechanics while maintaining the series’ lighthearted charm."
+            data-platform="Nintendo Switch" 
+            data-release="March 25, 2022"
+            data-genre="Adventure, Action, Sandbox">
+              <div class="thumb" style="background-image:url('KirbyandtheForgottenLand.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Lego City Undercover" 
+            data-description="An open‑world LEGO adventure where players control undercover cop Chase McCain through cities, vehicles, and missions. Its uniqueness lies in humor, seamlessly blending LEGO charm with sandbox exploration."
+            data-platform="Wii U" 
+            data-release="March 18, 2013"
+            data-genre="Adventure, Sandbox, Strategy">
+              <div class="thumb" style="background-image:url('LegoCityUndercover.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Luigi's Mansion" 
+            data-description="A spooky puzzle‑adventure where Luigi explores a ghost‑filled mansion using his Poltergust to capture spirits. Unique for its atmospheric tone and puzzle‑driven ghost‑hunting mechanics."
+            data-platform="GameCube" 
+            data-release="January 14, 2002"
+            data-genre="Adventure, Puzzle, Horror">
+              <div class="thumb" style="background-image:url('LuigisMansion.jpeg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Luigi's Mansion: Dark Moon" 
+            data-description="A 3DS sequel with multiple mansions, mission‑based structure, and enhanced Poltergust gameplay. Unique for its episodic style, co‑op, and expanded ghost-hunting tools."
+            data-platform="Nintendo 3DS" 
+            data-release="March 20, 2013"
+            data-genre="Adventure, Puzzle, Horror">
+              <div class="thumb" style="background-image:url('LuigisMansion-Darkmoon.jpeg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Luigi's Mansion 3" 
+            data-description="A resort‑style haunted location with slick 3D visuals, puzzle‑combat blend, and co‑op Gooigi mechanics. Unique for lush staging, multiplayer, and inventive Poltergust 5000 gameplay."
+            data-platform="Nintendo Switch" 
+            data-release="October 31, 2019"
+            data-genre="Adventure, Puzzle, Horror">
+              <div class="thumb" style="background-image:url('LuigisMansion3.jpeg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario + Rabbids Kingdom Battle" 
+            data-description="A wildly inventive turn‑based strategy crossover where Mario and friends unite with Rabbid versions of themselves to restore a vortex‑stricken Mushroom Kingdom. Unique for its mash‑up humor, weapon‑rich tactical combat, and exploration of twisted Mario realms that feel fresh yet familiar."
+            data-platform="Nintendo Switch" 
+            data-release="August 29, 2017"
+            data-genre="Strategy, Adventure">
+              <div class="thumb" style="background-image:url('MarioRabbidsKingdomBattle.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Golf" 
+            data-description="A fun, approachable golf title featuring Mario universe characters on themed courses with simplified mechanics, yet enough depth for seasoned players. Unique for mixing classic sports gameplay with light RPG and character stats, and later inspiring several Mario‑style sequels"
+            data-platform="Nintendo 64" 
+            data-release="July 26, 1999"
+            data-genre="Sports, RPG">
+              <div class="thumb" style="background-image:url('MarioGolf.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Golf: Super Rush" 
+            data-description="A modern, faster-paced Mario golf entry that amps up action with speed‑based gameplay, new power shots, and a focus on multiplayer frenzy. Unique among the series for its emphasis on quick matches and kinetic pacing."
+            data-platform="Nintendo Switch" 
+            data-release="June 25, 2021"
+            data-genre="Sports">
+              <div class="thumb" style="background-image:url('MarioGolf-SuperRush.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart 64" 
+            data-description="A landmark 3D kart racer where Mario and friends compete on iconic courses with power-ups and drifting mechanics. Unique for pioneering 3D multiplayer racing and establishing a template that defines the Mario Kart series."
+            data-platform="Nintendo 64" 
+            data-release="December 14, 1996"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKart64.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart 7" 
+            data-description="3DS addition to the series featuring anti‑gravity, gliding, and underwater driving mechanics. Unique for introducing verticality and new terrain types, adding depth to the classic kart‑racing formula."
+            data-platform="Nintendo 3DS" 
+            data-release="December 1, 2011"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKart7.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart 8" 
+            data-description="Wii U racer with anti‑gravity tracks, HD visuals, and expanded online play. Unique for blending stunning presentation with inventive track design, and laying groundwork for a reinvention of the series."
+            data-platform="Wii U" 
+            data-release="May 29, 2014"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKart8.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart 8 Deluxe" 
+            data-description="Definitive Switch version of Mario Kart 8, featuring all DLC, new characters, improved battle modes, and portability. Unique for offering the most complete package, balancing accessibility and depth in handheld/home play."
+            data-platform="Nintendo Switch" 
+            data-release="April 28, 2017"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKart8del.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart DS" 
+            data-description="Handheld entry pioneering online multiplayer and mission modes on the DS. Unique for utilizing dual screens and Wi‑Fi play, expanding portability and competitive racing experiences."
+            data-platform="Nintendo DS" 
+            data-release="November 14, 2005"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKartDS.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart Double Dash!!" 
+            data-description="GameCube racer introducing co‑driver mechanics—two characters share one kart with unique items. Unique for its partnership dynamics and cooperative kart control, a departure from solo-driven entries."
+            data-platform="GameCube" 
+            data-release="November 7, 2003"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKartDoubleDash.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Kart Wii" 
+            data-description="Wii kart racer with motion controls, online racing, and motorcycles addition. Unique for its Wii Remote steering and inclusive design, expanding appeal across audiences."
+            data-platform="Wii" 
+            data-release="April 10, 2008"
+            data-genre="Racing, Action">
+              <div class="thumb" style="background-image:url('MarioKartWii.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party" 
+            data-description="A board‑game style multiplayer collection of mini-games introducing Mario Party’s iconic formula—move, play mini-games, and steal stars. Unique for its engaging group play and establishing the party‑game template.."
+            data-platform="Nintendo 64" 
+            data-release="December 18, 1998"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 2" 
+            data-description="N64 party sequel with themed boards, items, and costumes. Unique for enhancing the original with tighter mechanics, more mini-games, and character outfits that added flair to matches."
+            data-platform="Nintendo 64" 
+            data-release="December 17, 1999"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 3" 
+            data-description="Final N64 entry with duel mode and RPG-like elements. Unique for adding storybook duels and more structured gameplay, giving players more depth in mini‑game strategies."
+            data-platform="Nintendo 64" 
+            data-release="December 7, 2000"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty3.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 4" 
+            data-description="GameCube debut adding 4-player simultaneous play and more elaborate boards. Unique for leveraging the GC hardware with sharper graphics and improved mini-games."
+            data-platform="GameCube" 
+            data-release="October 21, 2002"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty4.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 5" 
+            data-description="Introduced car‑style movement and 'Happy Spaces' with item theaters. Unique for its item-centric gameplay and interactive events on boards, adding unpredictability."
+            data-platform="GameCube" 
+            data-release="November 11, 2003"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty5.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 6" 
+            data-description="Added day-night cycle affecting boards and music. Unique for its dynamic day/night system that altered gameplay depending on time of day, adding variable strategy."
+            data-platform="GameCube" 
+            data-release="November 18, 2004"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty6.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 7" 
+            data-description="Expanded to 8 players and introduced microphone mini-games. Unique for party‑size increases and voice command mini-games, enhancing group interaction."
+            data-platform="GameCube" 
+            data-release="November 7, 2005"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty7.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 8" 
+            data-description="TWii entry with motion controls and themed boards. Unique for incorporating motion-based mini-games and high-definition visuals, embracing the Wii’s control style."
+            data-platform="Wii" 
+            data-release="May 29, 2007"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty8.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 9" 
+            data-description="Revamped board mechanics: all players ride together in a vehicle. Unique for its unified movement system, replacing individual dice rolls for a group-moving experience."
+            data-platform="Wii" 
+            data-release="March 2, 2012"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty9.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party 10" 
+            data-description="Wii U entry featuring Bowser Party mode and Amiibo support. Unique for asymmetrical Bowser vs. Mario‑team play, blending traditional board play with competitive twist."
+            data-platform="Wii U" 
+            data-release="March 12, 2015"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioParty10.png');"></div>
+            </div>
+
+
+            <div class="card" data-title="Mario Party Superstars" 
+            data-description="Modern Switch collection compiling classic boards and mini-games from the early series with online play. Unique for remastering fan-favorite content with modern features like online multiplayer."
+            data-platform="Nintendo Switch" 
+            data-release="October 29, 2021"
+            data-genre="Party, Strategy, Simulation">
+              <div class="thumb" style="background-image:url('MarioPartySuperstars.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid" 
+            data-description="A pioneering sci‑fi action‑adventure starring Samus Aran exploring the alien planet Zebes. Players collect power-ups, navigate non-linear levels, and uncover secrets, establishing the blueprint for “Metroidvania” games. Its eerie atmosphere, hidden areas, and item-based progression revolutionized exploration-driven platformers."
+            data-platform="NES" 
+            data-release="August 6, 1986"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('Metroid.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid II: Return of Samus" 
+            data-description="A solitary expedition to planet SR388, where Samus eradicates Metroids in treacherous underground caverns. It introduced traversal enhancements like Space Jump and Spider Ball and expanded Metroid lore. Its dark tone and tight exploration mechanics deepened the series’ atmosphere and set up narrative threads echoed in later titles."
+            data-platform="Game Boy" 
+            data-release="August 26, 1991"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('Metroid2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid: Samus Returns" 
+            data-description="A 2.5D reimagining of Metroid II, featuring modern visuals, 360° aiming, counter-attacks, and enhanced exploration sections. It introduces Fusion Mode for extra unlockables and narrative depth. Its polished mechanics and expanded gameplay lifted the original’s foundations into a smoother, more strategic modern adventure."
+            data-platform="Nintendo 3DS" 
+            data-release="September 15, 2017"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidSamusReturns.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Fusion" 
+            data-description="A story-rich entry where Samus, infected by X parasites, navigates a gray spaceship while patients rail under constant threat. With tight corridors, new secondary weapons, and dynamic boss fights, it refined atmosphere-driven storytelling and added emotional resonance through AI partner interactions and suspenseful exploration."
+            data-platform="Game Boy Advance" 
+            data-release="November 18, 2002"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidFusion.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Dread" 
+            data-description="Samus returns to 2D platforming with fluid movement, EMMI stalkers, and terrifying tension. Set on planet ZDR, its sensory-driven chase sequences and stealthy traversal sharpen suspense. It balances firefights, exploration, and fear, revitalizing classic structure with cinematic intensity and modern pacing."
+            data-platform="Nintendo Switch" 
+            data-release="October 8, 2021"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidDread.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Prime" 
+            data-description="A first-person sci‑fi action-adventure where Samus Aran explores the toxic world of Tallon IV. It blends immersive storytelling, atmospheric exploration, and scanning mechanics with atmospheric environments. Its unique sense of immersion and non-linear design revolutionized how narrative and gameplay coalesce in first-person Metroid titles."
+            data-platform="GameCube" 
+            data-release="November 18, 2002"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidPrime.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Prime 2: Echoes" 
+            data-description="On the alien planet Aether, Samus confronts dual realms—Light and Dark Aether—and navigates puzzles, hostile environments, and spectral enemies. Its addition of dimension‑switching, multi-phase bosses, and a darker tone make it a standout in the trilogy."
+            data-platform="GameCube" 
+            data-release="November 15, 2004"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidPrime2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Prime 3: Corruption" 
+            data-description="The only original Prime title on Wii, it sends Samus across multiple planets, wielding Wii Remote aiming and new Hypermode powers. With motion-based combat, telegraphed boss fights, and streamlined movement, it elevated series dynamics and embraced the Wii’s control capabilities."
+            data-platform="Wii" 
+            data-release="August 28, 2007"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidPrime3.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Prime: Trilogy" 
+            data-description="A deluxe compilation bundling the three Prime games, updated for Wii with motion aiming, widescreen 16:9 visuals, unlockables, and unified menu. It offered fans a definitive package of the series enhanced with intuitive controls, smoother presentation, and cross-game progression incentives."
+            data-platform="Wii" 
+            data-release="August 24, 2009"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidPrimeTrilogy.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Metroid Prime Remastered" 
+            data-description="A modern remaster of the original Prime, featuring updated visuals, dual-stick or motion controls, and refined performance while preserving the core experience. Its balanced modernization preserved the original’s spirit, offering both classic fans and newcomers the iconic adventure in enhanced form."
+            data-platform="Nintendo Switch" 
+            data-release="February 8, 2023"
+            data-genre="Action, Adventure">
+              <div class="thumb" style="background-image:url('MetroidPrimeRemastered.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Minecraft" 
+            data-description="A sandbox survival game where you mine resources, craft tools, build structures, and face creatures in varied biomes. Its Bedrock release on Switch added cross‑platform multiplayer, DLC like the Super Mario Mash-Up pack, and seamless creative/adventure experiences. Portability and cross‑play cemented its place as a universal gaming staple."
+            data-platform="Nintendo Switch" 
+            data-release="May 11, 2017"
+            data-genre="Sandbox, Simulation, Adventure">
+              <div class="thumb" style="background-image:url('Minecraft.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Moonlighter" 
+            data-description="An action‑RPG where players juggle roles as a shopkeeper by day and dungeon delver by night. Manage inventory and sell loot to fund excursions. Its strategic shopkeeping mechanics combined with dynamic combat create a satisfying loop. The Switch edition offers full portability for rogue‑like exploration on the go."
+            data-platform="Nintendo Switch" 
+            data-release="November 5, 2018"
+            data-genre="Action, RPG, Simulation">
+              <div class="thumb" style="background-image:url('Moonlighter.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Monster Hunter 3 Ultimate" 
+            data-description="An expanded HD remake of Monster Hunter Tri, featuring underwater combat, overland exploration, and cross-platform save transfers. The Wii U version offers online multiplayer and crisp graphics, while the 3DS supports local co-op and streetpass features. Its dual-platform integration made it a high-water mark for handheld-console MH synergy."
+            data-platform="Nintendo 3DS" 
+            data-release="December 8, 2012"
+            data-genre="Action, RPG, Simulation">
+              <div class="thumb" style="background-image:url('MonsterHunter3.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Monster Hunter 4 Ultimate" 
+            data-description="A feature-rich title on 3DS that expanded hunting tools and environments, added verticality, and improved monster AI. It launched alongside a special New Nintendo 3DS XL bundle. The campaign’s depth and cunning hunts made it a staple for handheld fans of the series."
+            data-platform="Nintendo 3DS" 
+            data-release="February 13, 2015"
+            data-genre="Action, RPG">
+              <div class="thumb" style="background-image:url('MonsterHunter4.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Monster Hunter Generations Ultimate" 
+            data-description="A definitive Switch port of Generations (XX), featuring G‑Rank content, enhanced visuals, and local/online multiplayer. It allowed save transfer from 3DS and provided a massive roster of monsters, all wrapped in Switch portability and HD presentation."
+            data-platform="Nintendo Switch" 
+            data-release="August 28, 2018"
+            data-genre="Action, RPG">
+              <div class="thumb" style="background-image:url('MonsterHunterGenerations.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Monster Hunter Rise" 
+            data-description="Introducing Wirebugs and Palamute companions, this action RPG delivers fluid, vertical hunts set in Kamura Village. Its seamless areas and adaptable combat brought fresh mechanics. With portable and docked play, Rise redefined what handheld hunters expect."
+            data-platform="Nintendo Switch" 
+            data-release="March 26, 2021"
+            data-genre="Action, RPG">
+              <div class="thumb" style="background-image:url('MonsterHunterRise.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Naruto Shippuden: Ultimate Ninja Storm Trilogy" 
+            data-description="A compilation of three Naruto fighting titles offering fast-paced arena combat, story arcs through the 4th Great Ninja War, and memorable bosses. The Switch release includes DLC costumes and supports local and online multiplayer, blending anime spectacle with smooth, accessible gameplay."
+            data-platform="Nintendo Switch" 
+            data-release="April 26, 2018"
+            data-genre="Fighting, Action, Adventure">
+              <div class="thumb" style="background-image:url('NarutoShippudenUltimate.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Nintendogs" 
+            data-description="A charming pet simulation that utilizes the DS’s touchscreen, microphone, and Wi‑Fi. Players raise, train, and compete with virtual puppies through voice commands and nurturing interactions. Released in multiple breed‑focused versions, it expanded the DS’s audience with its innovative, emotional gameplay."
+            data-platform="Nintendo DS" 
+            data-release="April 21, 2005"
+            data-genre="Simulation, Casual">
+              <div class="thumb" style="background-image:url('Nintendogs.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Nintendogs + Cats" 
+            data-description="A 3DS pet simulation sequel enhancing the original with cats, online connectivity via Nintendo Network, and novelties at launch. Players form bonds with cats and dogs by teaching tricks, caring for them, and interacting via stylus and mic. It launched alongside the 3DS, stretching pet-sim boundaries."
+            data-platform="Nintendo 3DS" 
+            data-release="February 26, 2011"
+            data-genre="Simulation, Casual">
+              <div class="thumb" style="background-image:url('NintendogsCats.png');"></div>
+            </div>
+
+
+            <div class="card" data-title="Outlast" 
+            data-description="A harrowing psychological horror where journalist Miles Upshur investigates a deranged asylum. The Switch release, titled Outlast: Bundle of Terror, includes DLC and preserves the game’s chilling atmosphere and tension. Ported with quality intact, it brings survival horror to handheld audiences."
+            data-platform="Nintendo Switch" 
+            data-release="March 2, 2018"
+            data-genre="Horror, Survival">
+              <div class="thumb" style="background-image:url('Outlast.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Pikmin" 
+            data-description="As Captain Olimar, players command insect-like Pikmin species to recover ship parts before time runs out. Combining strategy and puzzle-solving, it's both charming and challenging. Its innovation in directing creatures and managing time-driven objectives made it a standout in real-time strategy on consoles."
+            data-platform="GameCube" 
+            data-release="October 26, 2001"
+            data-genre="Strategy, Puzzle">
+              <div class="thumb" style="background-image:url('Pikmin.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Pikmin 2" 
+            data-description="In this strategic sequel, Olimar returns with Louie to collect treasures and repay his company’s debt. With no time limit and the introduction of two new Pikmin types—White and Purple—it expands puzzles and combat. Cooperative multitasking, underground caves, and a two-player battle mode enhance its replayability and depth compared to the original."
+            data-platform="GameCube" 
+            data-release="April 29, 2004"
+            data-genre="Strategy, Puzzle">
+              <div class="thumb" style="background-image:url('Pikmin2.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Pikmin 3" 
+            data-description="A lush real-time strategy adventure with three captains and new Pikmin types. It introduced local and competitive modes, expanding gameplay variety. Its Wii U release added HD visuals and refined controls, offering richer exploration and strategic depth to series newcomers."
+            data-platform="Wii U" 
+            data-release="July 13, 2013"
+            data-genre="Strategy, Puzzle">
+              <div class="thumb" style="background-image:url('Pikmin3.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Pikmin 4" 
+            data-description="The latest Pikmin installment introduces customizable characters, Ice and Glow Pikmin, and Night Expeditions, requiring strategic defense against nocturnal enemies. Released on Switch, it blends exploration, resource management, and new gameplay twists that revitalize series mechanics."
+            data-platform="Nintendo Switch" 
+            data-release="July 21, 2023"
+            data-genre="Strategy, Adventure">
+              <div class="thumb" style="background-image:url('Pikmin4.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Picross DS" 
+            data-description="A digital nonogram puzzle game where players use logic to fill grids and reveal hidden images. Featuring both single- and multiplayer modes, it brought the classic Picross experience—and its relaxing, brain‑teasing puzzles—to the DS’s touchscreen environment."
+            data-platform="Nintendo DS" 
+            data-release="January 25, 2007"
+            data-genre="Puzzle">
+            <div class="thumb" style="background-image:url('PicrossDS.jpg');"></div>
+            </div>
+            
+
+
+            <div class="card" data-title="Picross 3D" 
+            data-description="An inventive 3D twist on Picross where players sculpt hidden block models by chipping away based on number clues. With releases staggered across regions—Japan (March 2009), Europe (March 2010), and North America (May 2010)—it expanded the puzzle series into volumetric logic gameplay."
+            data-platform="Nintendo DS" 
+            data-release="March 12, 2009"
+            data-genre="Puzzle">
+              <div class="thumb" style="background-image:url('Picross3D.jpg');"></div>
+            </div>
+
+
+            <div class="card" data-title="Pokémon Black" 
+            data-description="Embark on a fresh journey through Unova, capturing brand-new Pokémon and facing off against Team Plasma. Known for its evolution of game mechanics and storyline depth, it introduced animated sprites and a modern composition to the traditional Pokémon formula."
+            data-platform="Nintendo DS" 
+            data-release="September 18, 2010"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonBlack.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon White" 
+            data-description="Companion to Black, this version includes unique areas like White Forest and exclusive Pokémon found only here. It pairs the same core gameplay with version-specific content and legends, enhancing replayability."
+            data-platform="Nintendo DS" 
+            data-release="September 18, 2010"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonWhite.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Black 2" 
+            data-description="A direct sequel to Black, set two years later in Unova. Explore new areas, face evolved Gym Leaders, and engage in the memorable Pokémon World Tournament. It deepens the region’s lore and adds roster expansions and story content beyond its predecessor."
+            data-platform="Nintendo DS" 
+            data-release="June 23, 2012"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonBlack2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon White 2" 
+            data-description="Companion to Black 2, set in expanded Unova with enhanced storylines, new forms of Kyurem, and gameplay improvements like PokéStar Studios. It continues the timeline while reinforcing the new region’s evolution from previous titles."
+            data-platform="Nintendo DS" 
+            data-release="June 23, 2012"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonWhite2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Crystal" 
+            data-description="An enhanced edition of Gold/Silver, featuring a female protagonist option, animated sprites, seasonal events, and the Battle Tower. It adds narrative depth with Suicune story focus and is the first Pokémon to introduce Trailer RPG-style enhancements."
+            data-platform="Game Boy Color" 
+            data-release="December 14, 2000"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonCrystal.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Diamond" 
+            data-description="Set in the Sinnoh region, this fourth-generation entry introduced abilities, online trade/battle via Wi‑Fi, and 107 new species. It deepened gameplay mechanics and brought significant enhancements to connectivity and battle customization."
+            data-platform="Nintendo DS" 
+            data-release="September 28, 2006"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonDiamond.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Pearl" 
+            data-description="A paired version to Diamond, with regional-exclusive Pokémon and storyline differences surrounding legendary Palkia. Players experience a mirrored yet unique Sinnoh adventure with distinctive Gym Leaders and items."
+            data-platform="Nintendo DS" 
+            data-release="September 28, 2006"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonPearl.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Emerald" 
+            data-description="An enhanced version of Ruby and Sapphire, Emerald combines both storylines while introducing the Battle Frontier, animated sprites, and the legendary Rayquaza. With refined battle mechanics and new double battle opportunities, it’s a definitive third-version entry in the Hoenn region."
+            data-platform="Game Boy Advance" 
+            data-release="September 16, 2004"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonEmerald.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon FireRed" 
+            data-description="A faithful remake of Pokémon Red, this version modernizes Kanto with enhanced visuals, updated mechanics, and wireless multiplayer. It adds the Sevii Islands, expanding the endgame and offering new encounters from later generations."
+            data-platform="Game Boy Advance" 
+            data-release="January 29, 2004"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonFirered.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon LeafGreen" 
+            data-description="A remake of Pokémon Green, this version mirrors FireRed with exclusive Pokémon and the same upgrades, including updated graphics, wireless battles, and post-game Sevii Islands content."
+            data-platform="Game Boy Advance" 
+            data-release="January 29, 2004"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonLeafGreen.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Gold" 
+            data-description="Set in the Johto region, this second-generation title introduced real-time day/night cycles, Pokémon breeding, and two connected regions to explore. With new Pokémon, Dark and Steel types, and the chance to return to Kanto, it expanded the series' scope dramatically."
+            data-platform="Game Boy Color" 
+            data-release="November 21, 1999"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonGold.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Silver" 
+            data-description="A counterpart to Gold, Silver features version-exclusive Pokémon and the legendary Lugia. It shares the same Johto-Kanto structure and gameplay innovations, offering a nearly identical but complementary experience."
+            data-platform="Game Boy Color" 
+            data-release="November 21, 1999"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonSilver.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Omega Ruby" 
+            data-description="A 3D remake of Ruby, featuring Mega Evolutions, Primal Reversions, and the new Delta Episode. This version enhances Hoenn exploration with soaring flight, updated visuals, and modern mechanics from X/Y, while staying true to the original's spirit."
+            data-platform="Nintendo 3DS" 
+            data-release="November 21, 2014"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonOmegaRuby.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Alpha Sapphire" 
+            data-description="Alpha Sapphire retells the original Hoenn adventure with updated visuals, gameplay refinements, and the unique Primal Kyogre. It mirrors Omega Ruby’s improvements, offering new cinematic storytelling, legendary encounters, and enhanced trainer customization."
+            data-platform="Nintendo 3DS" 
+            data-release="November 21, 2014"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonAlphaSapphire.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Red" 
+            data-description="The original entry that launched the franchise. Explore Kanto, capture 151 Pokémon, and battle Gym Leaders to become Champion. Known for its nostalgic 8-bit charm and turn-based mechanics, it laid the foundation for generations to come."
+            data-platform="Game Boy" 
+            data-release="February 27, 1996"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonRed.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Blue" 
+            data-description="A companion to Red, with improved sprite designs and slight wild Pokémon differences. Players experience the same core story but with access to exclusive monsters, encouraging trading."
+            data-platform="Game Boy" 
+            data-release="October 15, 1996"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonBlue.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Green" 
+            data-description="Originally exclusive to Japan, Green was the first Pokémon title alongside Red. It shares the same structure but features different Pokémon availability and original sprites. Later replaced internationally by Blue."
+            data-platform="Game Boy" 
+            data-release="February 27, 1996"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonGreen.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Scarlet" 
+            data-description="Enter the open-world Paldea region in the first truly non-linear mainline Pokémon game. Choose your path across three stories, including the Pokémon League and the mysterious Area Zero. With new mechanics like Terastallization and rideable Legendaries, it redefines exploration and freedom."
+            data-platform="Nintendo Switch" 
+            data-release="November 18, 2022"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonScarlet.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Violet" 
+            data-description="Violet shares the open-world Paldea setting with Scarlet but features version-exclusive Pokémon, characters, and futuristic themes. Ride Miraidon through diverse biomes and uncover the secrets of Area Zero."
+            data-platform="Nintendo Switch" 
+            data-release="November 18, 2022"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonViolet.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Sword" 
+            data-description="Set in the Galar region, inspired by the UK, Sword introduces Dynamax battles, Gym challenges in stadiums, and roaming Pokémon in the Wild Area. Version-exclusive Pokémon and trainers offer replayability."
+            data-platform="Nintendo Switch" 
+            data-release="November 15, 2019"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonSword.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Shield" 
+            data-description="Companion to Sword, this version features exclusive monsters and story variations, including different Gym Leaders. The Wild Area and DLC expansions added exploration and legendary hunts."
+            data-platform="Nintendo Switch" 
+            data-release="November 15, 2019"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonShield.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Sun" 
+            data-description="Welcome to Alola—a tropical region without traditional Gyms. Sun introduces Island Trials, Z-Moves, regional variants, and new Pokémon across four islands. The story tackles dimensional travel and Ultra Beasts."
+            data-platform="Nintendo 3DS" 
+            data-release="November 18, 2016"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonSun.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Moon" 
+            data-description="A mirror of Sun, this version includes a shifted time cycle (12-hour difference), version-exclusive Pokémon, and subtle story differences. It features the same Z-Move mechanics and trials."
+            data-platform="Nintendo 3DS" 
+            data-release="November 18, 2016"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonMoon.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Ultra Sun" 
+            data-description="A reimagining of Sun, this version adds new Ultra Beasts, the Ultra Recon Squad, and deeper exploration of alternate dimensions. It enhances the original with expanded endgame content and new cutscenes."
+            data-platform="Nintendo 3DS" 
+            data-release="November 17, 2017"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonUltraSun.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Ultra Moon" 
+            data-description="An updated take on Moon, introducing new legendary encounters, expanded Ultra Wormholes, and an altered storyline involving Necrozma. It refines the Alola region and provides the most complete version of the Gen VII experience."
+            data-platform="Nintendo 3DS" 
+            data-release="November 17, 2017"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonUltraMoon.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon X" 
+            data-description="A major leap into 3D for the series, introducing Mega Evolutions, customizable characters, and the Kalos region inspired by France. With updated visuals and modern gameplay, it redefined Pokémon for a new era."
+            data-platform="Nintendo 3DS" 
+            data-release="October 12, 2013"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonX.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokémon Y" 
+            data-description="Parallel to X, this version shares the Kalos journey with exclusive Pokémon and a focus on the legendary Yveltal. It delivers the same refreshed visuals, systems, and world-building introduced in Gen VI."
+            data-platform="Nintendo 3DS" 
+            data-release="October 12, 2013"
+            data-genre="RPG, Adventure">
+            <div class="thumb" style="background-image:url('PokemonY.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokkén Tournament" 
+            data-description="A unique fighting game blending Pokémon characters with Tekken-style mechanics. Players engage in fast-paced 3D battles using combos, special moves, and Pokémon synergy. It offers a refreshing twist on traditional Pokémon gameplay with deep fighting mechanics and a vibrant roster."
+            data-platform="Wii U" 
+            data-release="March 18, 2016"
+            data-genre="Fighting, Action">
+            <div class="thumb" style="background-image:url('PokkenTournament.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pokkén Tournament DX" 
+            data-description="An enhanced version of Pokkén Tournament, featuring additional Pokémon, new support Pokémon, and improved visuals. The Switch version adds portable multiplayer and online battles, expanding accessibility while keeping the core Tekken-inspired combat intact."
+            data-platform="Nintendo Switch" 
+            data-release="September 22, 2017"
+            data-genre="Fighting, Action">
+            <div class="thumb" style="background-image:url('PokkenTournamentDX.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Pushmo" 
+            data-description="A charming puzzle platformer where players manipulate blocks to solve increasingly complex puzzles. Its intuitive mechanics and creative level design encourage problem-solving and exploration, making it a standout puzzle game on the 3DS."
+            data-platform="Nintendo 3DS" 
+            data-release="April 12, 2011"
+            data-genre="Puzzle, Adventure">
+            <div class="thumb" style="background-image:url('Pushmo.jpg');"></div>
+            </div>
+            
+
+            <div class="card" data-title="Resident Evil" 
+            data-description="A ground‑up remake of the original horror classic, with overhauled visuals, improved controls, expanded areas, and a revamped story for a more immersive survival experience."
+            data-platform="GameCube" 
+            data-release="April 30, 2002" 
+            data-genre="Horror, Action">
+            <div class="thumb" style="background-image:url('ResidentEvil.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Resident Evil Zero" 
+            data-description="A prequel to the remake, placing players in dual‑character gameplay aboard a haunted train and estate. It introduced partner switching and environmental puzzles to deepen series mechanics."
+            data-platform="GameCube" 
+            data-release="November 12, 2002" 
+            data-genre="Horror, Adventure">
+            <div class="thumb" style="background-image:url('ResidentEvil0.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Resident Evil 4" 
+            data-description="A genre‑defining third‑person action horror in which Leon Kennedy battles bio‑organic threats. Introduces over‑the‑shoulder aiming, immersive combat, and cinematic intensity that redefined the series."
+            data-platform="GameCube" 
+            data-release="January 11, 2005" 
+            data-genre="Horror, Action">
+            <div class="thumb" style="background-image:url('ResidentEvil4.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Resident Evil Revelations" 
+            data-description="A survival horror spin‑off on a cruise ship featuring episodic segments and terrifying outbreaks. It blends traditional Resident Evil tension with 3DS‑specific sleuthing and accessibility."
+            data-platform="Nintendo 3DS" 
+            data-release="January 17, 2012" 
+            data-genre="Horror, Adventure">
+            <div class="thumb" style="background-image:url('ResidentEvilRevelations.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Resident Evil Revelations 2" 
+            data-description="An episodic horror thriller introducing Claire Redfield and new protagonist Moira across tense chapters. It emphasizes story‑driven mechanics and choice‑based outcomes."
+            data-platform="Nintendo Switch" 
+            data-release="February 24, 2015" 
+            data-genre="Horror, Adventure">
+            <div class="thumb" style="background-image:url('ResidentEvilRevelations2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Risk of Rain" 
+            data-description="A roguelike action platformer where you battle through hordes of enemies and gather randomized items to grow stronger. Its escalating difficulty and co‑op support make each run thrilling."
+            data-platform="Nintendo Switch" 
+            data-release="September 26, 2018" 
+            data-genre="Roguelike, Action">
+            <div class="thumb" style="background-image:url('RiskofRain.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Risk of Rain 2" 
+            data-description="The sequel transitions the roguelike shooter into 3D, with scalable difficulty, cooperative play, and diverse survivors. Runs grow chaotic as stacks of items empower you in escalating action."
+            data-platform="Nintendo Switch" 
+            data-release="August 11, 2020" 
+            data-genre="Roguelike, Action">
+            <div class="thumb" style="background-image:url('RiskofRain2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Ring Fit Adventure" 
+            data-description="A fitness RPG using the Ring‑Con and Leg Strap to translate real exercises into in‑game movement and combat. Complete quests, defeat enemies, and customize workouts in a playful journey."
+            data-platform="Nintendo Switch" 
+            data-release="October 18, 2019" 
+            data-genre="Exergame, RPG">
+            <div class="thumb" style="background-image:url('RingFitAdventure.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Rune Factory" 
+            data-description="A farming simulation with RPG elements where players grow crops, raise monsters, and explore dungeons. It blends daily life mechanics with combat and relationships in a fantasy world."
+            data-platform="Nintendo DS" 
+            data-release="November 17, 2006" 
+            data-genre="Simulation, RPG">
+            <div class="thumb" style="background-image:url('RuneFactory.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Rune Factory 2" 
+            data-description="The sequel expands on simulation and combat, allowing players to marry and experience time progression across years. It deepens farming, dungeon crawling, and character relationships."
+            data-platform="Nintendo DS" 
+            data-release="August 7, 2008" 
+            data-genre="Simulation, RPG">
+            <div class="thumb" style="background-image:url('RuneFactory2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Rune Factory 3" 
+            data-description="Building on previous entries with a more personal story, real‑time combat, and pet companions. It delivers a heartfelt blend of life simulation, adventure, and monster‑raising."
+            data-platform="Nintendo DS" 
+            data-release="September 25, 2009" 
+            data-genre="Simulation, RPG">
+            <div class="thumb" style="background-image:url('RuneFactory3.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Rune Factory 4" 
+            data-description="An enhanced entry with multiple marriage options, political simulation, and active combat. It balances town‑building, romance, and dungeons with depth and charm."
+            data-platform="Nintendo 3DS" 
+            data-release="July 19, 2012" 
+            data-genre="Simulation, RPG">
+            <div class="thumb" style="background-image:url('RuneFactory4.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Rune Factory 5" 
+            data-description="Expands the simulation universe with modern visuals, new mechanics like town partnerships, and more complex story arcs. A refined blend of farming and fantasy adventure."
+            data-platform="Nintendo Switch" 
+            data-release="May 20, 2022" 
+            data-genre="Simulation, RPG">
+            <div class="thumb" style="background-image:url('RuneFactory5.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Shovel Knight Dig (Switch)" 
+            data-description="A vertical roguelite spin‑off featuring Shovel Knight diving downward through procedurally generated zones while battling enemies, collecting upgrades, and digging deeper toward mystery."
+            data-platform="Nintendo Switch" 
+            data-release="September 23, 2022" 
+            data-genre="Roguelite, Action">
+            <div class="thumb" style="background-image:url('ShovelKnightDig.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Silent Hill: Shattered Memories" 
+            data-description="A chilling reimagining of the original Silent Hill on Wii. Eschews combat in favor of psychological horror, motion controls, and adaptive narrative based on your actions."
+            data-platform="Wii" 
+            data-release="December 8, 2009" 
+            data-genre="Horror">
+            <div class="thumb" style="background-image:url('SilentHill-ShatteredMemories.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Slay the Spire" 
+            data-description="A rogue‑like deckbuilder combining strategic card combat and procedural levels. Players craft a deck to climb a spire of bosses, adapting strategy with each run."
+            data-platform="Nintendo Switch" 
+            data-release="May 21, 2019" 
+            data-genre="Roguelike, Strategy">
+            <div class="thumb" style="background-image:url('SlaytheSpire.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Sonic & All‑Stars Racing Transformed" 
+            data-description="A dynamic kart racer where tracks transform between land, sea, and air mid‑race. Featuring SEGA characters, power‑ups, and local or online multiplayer, it offers varied gameplay across evolving terrain."
+            data-platform="Wii U" 
+            data-release="November 30, 2012" 
+            data-genre="Racing, Action">
+            <div class="thumb" style="background-image:url('RacingSonic.png');"></div>
+            </div>
+
+            <div class="card" data-title="Soulcalibur II" 
+            data-description="A weapon‑based fighter featuring diverse characters and fluid combos. The GameCube version includes exclusive guest character Link, blending iconic universes and mastering 3D duels."
+            data-platform="GameCube" 
+            data-release="March 26, 2003" 
+            data-genre="Fighting, Action">
+            <div class="thumb" style="background-image:url('Soulcalibur2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Spirit Camera: The Cursed Memoir" 
+            data-description="A horror spin‑off using 3DS AR capabilities and a special diary. Players photograph real‑world spaces to reveal ghosts and solve a dark narrative tied to the Fatal Frame series."
+            data-platform="Nintendo 3DS" 
+            data-release="April 12, 2012" 
+            data-genre="Horror">
+            <div class="thumb" style="background-image:url('SpiritCamera-TheCursedMemoir.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Snipperclips" 
+            data-description="A creative puzzle game where players cut each other into shapes to solve cooperative challenges. Requires teamwork, quick thinking, and playful interaction."
+            data-platform="Nintendo Switch" 
+            data-release="March 3, 2017" 
+            data-genre="Puzzle, Party">
+            <div class="thumb" style="background-image:url('Snipperclips.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Castlevania IV" 
+            data-description="A gothic platformer on SNES with refined whip mechanics, parallax scrolling, and revamped level design. It elevated the atmospheric horror of its predecessor with fluid controls and visual flair."
+            data-platform="SNES" 
+            data-release="October 31, 1991" 
+            data-genre="Platformer, Action">
+            <div class="thumb" style="background-image:url('SuperCastlevania4.jpg');"></div>
+            </div>
+      
+            <div class="card" data-title="Super Mario Bros." 
+            data-description="A landmark platformer that defined the genre—jumping, power-ups, and rescuing Peach in side-scrolling 8-bit glory. It introduced warp zones, hidden blocks, and tight controls, shaping future platform games."
+            data-platform="NES" 
+            data-release="September 13, 1985" 
+            data-genre="Action">
+            <div class="thumb" style="background-image:url('SuperMarioBros.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario Bros. 2" 
+            data-description="A quirky twist on the classic formula: unique character abilities, vegetable harvesting, and a dreamlike setting. Its oddball mechanics and surreal atmosphere made it a beloved, standalone entry."
+            data-platform="NES" 
+            data-release="October 9, 1988" 
+            data-genre="Adventure">
+            <div class="thumb" style="background-image:url('SuperMarioBros2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario Bros. 3" 
+            data-description="A high-water mark in platforming—introducing world maps, flying, new power-ups like the Raccoon Suit, and diverse themed worlds. Its depth and creativity elevated the series to new heights."
+            data-platform="NES" 
+            data-release="October 23, 1988" 
+            data-genre="Action">
+            <div class="thumb" style="background-image:url('SuperMarioBros3.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario Galaxy" 
+            data-description="A gravity-defying 3‑D platformer set across spherical planetoids. With orchestral music, inventive level design, and cosmic exploration, it redefined Mario and platform genre expectations."
+            data-platform="Wii" 
+            data-release="November 1, 2007" 
+            data-genre="Adventure">
+            <div class="thumb" style="background-image:url('SuperMarioGalaxy.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario Galaxy 2" 
+            data-description="A stunning follow-up building on gravity mechanics with new power-ups, levels, and refined gameplay. It deepens the cosmic platforming formula with intelligent challenges and fan-favorite mechanics."
+            data-platform="Wii" 
+            data-release="June 11, 2010" 
+            data-genre="Adventure">
+            <div class="thumb" style="background-image:url('SuperMarioGalaxy2.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario Odyssey" 
+            data-description="A globe-trotting sandbox adventure where Mario teams up with Cappy to inhabit creatures and objects, bringing fresh movement and exploration across vibrant kingdoms."
+            data-platform="Nintendo Switch" 
+            data-release="October 27, 2017" 
+            data-genre="Adventure, Sandbox">
+            <div class="thumb" style="background-image:url('SuperMarioOdyssey.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario Sunshine" 
+            data-description="A tropical 3‑D adventure on Isle Delfino, with Mario using the FLUDD water tool to clean graffiti, navigate stages, and solve puzzles in bright, vibrant levels."
+            data-platform="GameCube" 
+            data-release="August 26, 2002" 
+            data-genre="Adventure">
+            <div class="thumb" style="background-image:url('SuperMarioSunshine.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Mario World" 
+            data-description="A Super NES classic introducing Yoshi, expansive level design, and the spin attack. It refined the side‑scroller formula with secrets, branching paths, and tight platforming."
+            data-platform="SNES" 
+            data-release="November 21, 1990" 
+            data-genre="Adventure">
+            <div class="thumb" style="background-image:url('SuperMarioWorld.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Smash Bros." 
+            data-description="The genre‑defining crossover brawler bringing Nintendo icons together in frenetic arena combat. Introduces simple controls, unique stages, items, and multiplayer chaos."
+            data-platform="Nintendo 64" 
+            data-release="January 21, 1999" 
+            data-genre="Fighting, Party">
+            <div class="thumb" style="background-image:url('SuperSmashBros.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Smash Bros. Melee" 
+            data-description="A highly competitive evolution of the original, with refined mechanics, faster action, and deeper techniques. It remains a cornerstone of esports for frantic, skill-based melee combat."
+            data-platform="GameCube" 
+            data-release="November 21, 2001" 
+            data-genre="Fighting, Party">
+            <div class="thumb" style="background-image:url('SuperSmashBrosMelee.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Smash Bros. Brawl" 
+            data-description="A more expansive fighter with a story campaign, deeper mechanics, and a massive roster including third-party fighters. Known for its cinematic flair and inclusive gameplay."
+            data-platform="Wii" 
+            data-release="March 9, 2008" 
+            data-genre="Fighting, Party">
+            <div class="thumb" style="background-image:url('SuperSmashBrosBrawl.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Smash Bros. for 3DS" 
+            data-description="The portable Smash—slightly scaled-down stages but rich with content, custom fighters, and local/online play to battle on the go."
+            data-platform="Nintendo 3DS" 
+            data-release="October 3, 2014" 
+            data-genre="Fighting, Party">
+            <div class="thumb" style="background-image:url('SuperSmashBros3ds.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Smash Bros. for Wii U" 
+            data-description="The HD Smash with crisp graphics, new stages, and expanded multiplayer modes supporting up to 8 players on big-screen battles."
+            data-platform="Wii U" 
+            data-release="November 21, 2014" 
+            data-genre="Fighting, Party">
+            <div class="thumb" style="background-image:url('SuperSmashBrosWiiU.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Smash Bros. Ultimate" 
+            data-description="The ultimate crossover, featuring every character ever in the Smash series, massive stage variety, and refined mechanics for the largest roster and content-rich fighter."
+            data-platform="Nintendo Switch" 
+            data-release="December 7, 2018" 
+            data-genre="Fighting, Party">
+            <div class="thumb" style="background-image:url('SuperSmashBrosUltimate.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Super Punch‑Out!!" 
+            data-description="A stylized arcade boxing game with caricatured opponents, timing-based dodges, and classic punchy action wrapped in colorful retro presentation."
+            data-platform="SNES" 
+            data-release="March 1, 1994" 
+            data-genre="Sports, Action">
+            <div class="thumb" style="background-image:url('SuperPunch-Out.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Tetris" 
+            data-description="The timeless puzzle classic of arranging falling blocks to clear lines—it defined an entire genre and remains endlessly addictive across platforms."
+            data-platform="Game Boy" 
+            data-release="June 14, 1989" 
+            data-genre="Puzzle">
+            <div class="thumb" style="background-image:url('Tetris.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Tetris 99" 
+            data-description="A battle‑royale twist on Tetris—99 players compete online in real-time, sending garbage lines to opponents as they aim to be the last stack standing."
+            data-platform="Nintendo Switch" 
+            data-release="February 13, 2019" 
+            data-genre="Puzzle, Strategy">
+            <div class="thumb" style="background-image:url('Tetris99.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Tetris DS" 
+            data-description="A dual-screen Tetris packed with multiple modes inspired by classic Nintendo games—Mashups, Touch Mode, and more, tailored for portable play."
+            data-platform="Nintendo DS" 
+            data-release="March 20, 2006" 
+            data-genre="Puzzle, Casual">
+            <div class="thumb" style="background-image:url('TetrisDS.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Binding of Isaac: Rebirth" 
+            data-description="A dark rogue‑like shooter following Isaac in randomized dungeons fighting grotesque monsters. Known for difficult but rewarding runs and heavy replay value."
+            data-platform="Nintendo Switch" 
+            data-release="January 28, 2015" 
+            data-genre="Roguelike, Action">
+            <div class="thumb" style="background-image:url('TheBindingofIsaac-Rebirth.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The House of the Dead: Remake" 
+            data-description="A modern rebuild of the arcade horror shooter—classic zombies and frantic shooting action reimagined with updated visuals and immersive gameplay."
+            data-platform="Nintendo Switch" 
+            data-release="April 28, 2022" 
+            data-genre="Horror">
+            <div class="thumb" style="background-image:url('TheHouseoftheDead-Remake.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda" 
+            data-description="The groundbreaking action-adventure game that introduced players to the expansive world of Hyrule. Explore dungeons, solve puzzles, and battle iconic enemies. Its open-world structure laid the foundation for future entries." 
+            data-platform="NES" 
+            data-release="February 21, 1986" 
+            data-genre="Action, Adventure">
+            <div class="thumb" style="background-image:url('Zelda.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: A Link to the Past" 
+            data-description="A classic top-down adventure game featuring dungeon exploration, puzzle-solving, and a compelling story. It’s celebrated for its complex dual-world system and expansive world design." 
+            data-platform="SNES" 
+            data-release="November 21, 1991" 
+            data-genre="Action, Adventure">
+            <div class="thumb" style="background-image:url('Zelda-LinktothePast.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: Breath of the Wild" 
+            data-description="A revolutionary open-world entry that redefines the series with exploration, survival mechanics, and environmental interaction. It broke conventions with non-linear gameplay, making it a genre-defining experience for the Switch." 
+            data-platform="Nintendo Switch" 
+            data-release="March 3, 2017" 
+            data-genre="Action, Adventure, Sandbox">
+            <div class="thumb" style="background-image:url('Zelda-BreathoftheWild.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: Link’s Awakening" 
+            data-description="The first portable Zelda game, featuring dreamlike elements and a quirky cast. Its unique blend of storytelling and puzzle-solving on the Game Boy made it one of the most beloved entries in the series." 
+            data-platform="Game Boy" 
+            data-release="June 6, 1993" 
+            data-genre="Action, Adventure">
+            <div class="thumb" style="background-image:url('Zelda-LinksAwakening.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: Majora’s Mask" 
+            data-description="A darker, time-loop-based Zelda game where Link must relive the same three days to save a doomed world. Its unique time-management mechanics and eerie atmosphere set it apart from Ocarina of Time." 
+            data-platform="Nintendo 64" 
+            data-release="April 27, 2000" 
+            data-genre="Action, Adventure">
+            <div class="thumb" style="background-image:url('Zelda-MajorasMask.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: Ocarina of Time" 
+            data-description="A landmark 3D action-adventure that redefined the genre. With deep storytelling, innovative gameplay, and groundbreaking mechanics like Z-targeting, it is often regarded as one of the greatest games ever made." 
+            data-platform="Nintendo 64" 
+            data-release="November 21, 1998" 
+            data-genre="Action, Adventure">
+            <div class="thumb" style="background-image:url('Zelda-OcarinaofTime.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: Skyward Sword" 
+            data-description="A motion-controlled Zelda game featuring swordplay and flying mechanics. While it divided fans due to its control scheme, it introduced fresh elements and an emotional story set before Ocarina of Time." 
+            data-platform="Wii" 
+            data-release="November 20, 2011" 
+            data-genre="Action, Adventure">
+            <div class="thumb" style="background-image:url('Zelda-SkywardSword.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="The Legend of Zelda: Tears of the Kingdom" 
+            data-description="A direct sequel to Breath of the Wild, continuing its open-world exploration with new mechanics and a deeper storyline involving Hyrule’s past and its connection to the skies above." 
+            data-platform="Nintendo Switch" 
+            data-release="May 12, 2023" 
+            data-genre="Action, Adventure, Sandbox">
+            <div class="thumb" style="background-image:url('Zelda-TearsoftheKingdom.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Theatrhythm Final Fantasy" 
+            data-description="A rhythm game featuring characters and music from the Final Fantasy series. Players tap, slide, and hold to the beat of iconic tracks. The unique mix of RPG elements and rhythm gameplay makes it a fan favorite." 
+            data-platform="Nintendo 3DS" 
+            data-release="February 16, 2012" 
+            data-genre="Music, RPG">
+            <div class="thumb" style="background-image:url('TheatrhythmFinalFantasy.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Theatrhythm Final Fantasy: Curtain Call" 
+            data-description="The sequel builds upon the original's rhythm gameplay with more songs, characters, and stages. The addition of new mechanics and deeper content makes it the ultimate Theatrhythm experience for Final Fantasy fans." 
+            data-platform="Nintendo 3DS" 
+            data-release="September 16, 2014" 
+            data-genre="Music, RPG">
+            <div class="thumb" style="background-image:url('TheatrhythmFinalFantasy-CurtainCall.jpg');"></div>
+            </div>
+
+            <div class="card" data-title="Theatrhythm Final Bar Line" 
+            data-description="The latest entry in the Theatrhythm series, adding more music and characters from across the Final Fantasy series. It focuses on the rhythm-based action with deeper customization and an expanded library of songs." 
+            data-platform="Nintendo Switch" 
+            data-release="February 16, 2023" 
+            data-genre="Music, RPG">
+            <div class="thumb" style="background-image:url('TheatrhythmFinalBarLine.jpg');"></div>
+            </div>
+
+
+            <!--
+            <div class="card" data-title="Pushmo" 
+            data-description="A charming puzzle platformer where players manipulate blocks to solve increasingly complex puzzles. Its intuitive mechanics and creative level design encourage problem-solving and exploration, making it a standout puzzle game on the 3DS."
+            data-platform="Nintendo 3DS" 
+            data-release="April 12, 2011"
+            data-genre="Puzzle, Adventure">
+            <div class="thumb" style="background-image:url('');"></div>
+            </div>
+
+            <div class="card" data-title="" 
+            data-description=""
+            data-platform="" 
+            data-release=""
+            data-genre="">
+              <div class="thumb" style="background-image:url('');"></div>
+            </div>
+
+            -->
+
+          </div>
+        </div>
+
+         <!-- Navigation Bar -->
+        <nav>
+          <div>
+            <img src="Navigation.png" alt="" class="Navbar">
+          </div>
+          <div class="NavButtons">
+            <a href="games.html"><button class="games-button">Games</button></a>
+            <a href="gallery.html"><button class="gallery-button">Gallery</button></a>
+            <a href="index.html"><button class="home-button">Home</button></a>
+            <a href="about.html"><button class="about-button">About</button></a>
+            <a href="contact.html"><button class="contact-button">Contact</button></a>
+          </div>
+        </nav>
+
+        <!-- Footer -->
+        <div class="footer">
+          <a href="https://www.facebook.com/Zerl.3am" target="_blank">
+        <img src="FB.png" class="FBicon">
+        </a>
+      <a href="https://www.instagram.com/Zerl_3am" target="_blank">
+        <img src="IG.png" class="IGicon">
+        </a>
+      <a href="https://t.me/Seven_Zerl" target="_blank">
+        <img src="TG.png" class="TGicon">
+        </a>
+      <a href="https://Discordapp.com/users/zerl_23" target="_blank">
+        <img src="DC.png" class="DCicon">
+        </a>
+      <a href="https://www.reddit.com/u/Zerl23" target="_blank">
+        <img src="Reddit.png" class="Redditicon">
+        </a>
+          <div class="ps-text">This Website is for project purposes only</div>
+        </div>
+
+        <!-- Fullscreen -->
+        <div class="fullscreen" id="fullscreen" aria-hidden="true">
+          <div class="fs-bg" id="fsBg"></div>
+          <div class="fs-scrim"></div>
+          <div class="fs-top">
+
+            <button class="btn" id="exitBtn" aria-label="Exit to Home">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+              Home
+            </button>
+          </div>
+          <div class="fs-title" id="fsTitle">Game Title</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="games.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

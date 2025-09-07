@@ -1,0 +1,125 @@
+Body{
+  margin: 0;
+  height: 100vh;
+  font-family:'orbitron', sans-serif;
+  background-image: url(MarioBG.gif);
+  background-size: contain;
+}
+.contact{
+  font-weight: 550;
+  font-size: 36px;
+  color: #ffffff;
+  border-left: 4px solid rgb(209, 29, 29);
+  padding-left: 10px;
+  font-family:sans-serif;
+  margin-left: 650px;
+  font-family:'Montserrat', sans-serif;
+}
+.border {
+  padding: 20px;
+}
+.Contact-Container{
+  font-family:'Montserrat', sans-serif;
+  text-align: center;
+  color: rgba(204, 198, 198, 0.952);
+  background-color: #0000004d;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 100px;
+}
+.icons a {
+  text-decoration: none;     /* Removes underline */
+  color: inherit;            /* Uses inherited text color */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  transition: color 0.3s ease;
+}
+/*Icons*/
+.icons {
+  gap: 15px;
+  margin-top: 30px;
+  align-items:left;
+}
+.FBicon {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+.IGicon {
+  margin-left: -12px;
+  width: 55px;
+  height: 30px;
+}
+.TGicon {
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.DC{
+  margin-top: -5px;
+}
+.DCicon {
+  margin-left: -15px;
+  width: 60px;
+  height: 42px;
+}
+.Reddit{
+  margin-top: -13px;
+}
+.Redditicon {
+  margin-left: -8px;
+  width: 48px;
+  height: 48px;
+  padding-right: 3px;
+}
+/*Navigation Bar*/
+.Navbar{
+  position: fixed;
+  bottom: 20px;
+  left: 35%;
+  width: 450px;
+}
+.NavButtons{
+  position: fixed;
+  bottom: 33px;
+  left: 35%;
+  opacity: 0
+}
+.games-button{
+  width: 48px;
+  height: 35px;
+  margin-left: 32px;
+}
+.gallery-button{
+  width: 50px;
+  height: 35px; 
+  margin-left: 23px;
+}
+.home-button{
+  width: 81px;
+  height: 81px; 
+  margin-left: 24px;
+  border-radius: 50%;
+}
+.about-button{
+  width: 43px;
+  height: 35px; 
+  margin-left: 27px;
+}
+.contact-button{
+  width: 40px;
+  height: 35px; 
+  margin-left: 26px;
+}
+
+
+

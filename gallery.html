@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nintendo Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+            <rect x="2" y="20" width="96" height="60" rx="14" fill="var(--red)" />
+            <text x="50" y="57" text-anchor="middle" font-family="'Press Start 2P',monospace" font-size="26" fill="#fff">N</text>
+          </svg>
+        </div>
+        <div class="title">
+          <h1>Nintendo Gallery</h1>
+          <p>Pictures • Videos</p>
+        </div>
+      </div>
+      <div class="controls" aria-label="Filter gallery">
+        <button class="btn active" data-filter="pictures">Pictures</button>
+        <button class="btn" data-filter="videos">Videos</button>
+      </div>
+    </header>
+
+    <div class="section-title">
+      <strong>Explore</strong>
+      <div class="sep"></div>
+    </div>
+
+    <section class="gallery" id="gallery" aria-live="polite">
+      <!-- Pictures -->
+      <article class="item image-item" data-category="pictures" style="animation-delay:.06s">
+        <img class="thumb-image" src="AW-Gal.jpg" loading="lazy" onclick="openImageModal('AW-Gal.jpg')">
+        <div class="meta">Advance Wars</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.12s">
+        <img class="thumb-image" src="AW1+2-Gallery.jpg" loading="lazy" onclick="openImageModal('AW1+2-Gallery.jpg')">
+        <div class="meta">Advance Wars</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="ACNewhorizon-Gal.jpg" loading="lazy" onclick="openImageModal('ACNewhorizon-Gal.jpg')">
+        <div class="meta">Animal Crossing</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="BattalionWars2-Gal.jpg" loading="lazy" onclick="openImageModal('BattalionWars2-Gal.jpg')">
+        <div class="meta">Battalion Wars 2</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="Castlevania-Gal.jpg" loading="lazy" onclick="openImageModal('Castlevania-Gal.jpg')">
+        <div class="meta">Castlevenia</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="ChroniclesXenoblade-Gal.jpg" loading="lazy" onclick="openImageModal('ChroniclesXenoblade-Gal.jpg')">
+        <div class="meta">Chronicles Xenoblade</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="DeadCells-Gal.jpg" loading="lazy" onclick="openImageModal('DeadCells-Gal.jpg')">
+        <div class="meta">Dead Cells</div>
+      </article>
+
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="DonkeyKong-Gal.png" loading="lazy" onclick="openImageModal('DonkeyKong-Gal.png')">
+        <div class="meta">Donkey Kong</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="DragonQuestBuilders-Gal.jpg" loading="lazy" onclick="openImageModal('DragonQuestBuilders-Gal.jpg')">
+        <div class="meta">Dragon Quest Builders</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="EntertheGungeon-Gal.jpg" loading="lazy" onclick="openImageModal('EntertheGungeon-Gal.jpg')">
+        <div class="meta">Enter the Gungeon</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="FatalFrame-Gal.jpg" loading="lazy" onclick="openImageModal('FatalFrame-Gal.jpg')">
+        <div class="meta">Fatal Frame</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="FireEmblemEngage-Gal.jpg" loading="lazy" onclick="openImageModal('FireEmblemEngage-Gal.jpg')">
+        <div class="meta">Fire Emblem Engage</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="FireEmblemThree-Gal.jpg" loading="lazy" onclick="openImageModal('FireEmblemThree-Gal.jpg')">
+        <div class="meta">Fire Emblem Three Houses</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="FZeroGX-Gal.jpg" loading="lazy" onclick="openImageModal('FZeroGX-Gal.jpg')">
+        <div class="meta">F-Zero GX</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="GuitarHeroWorldTour-Gal.png" loading="lazy" onclick="openImageModal('GuitarHeroWorldTour-Gal.png')">
+        <div class="meta">Guitar Hero: World Tour</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="HarvestMoon-Gal.jpg" loading="lazy" onclick="openImageModal('HarvestMoon-Gal.jpg')">
+        <div class="meta">Harvest Moon</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="HollowKnight-Gal.jpg" loading="lazy" onclick="openImageModal('HollowKnight-Gal.jpg')">
+        <div class="meta">Hollow Knight</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="HollowKnightSilksong-Gal.jpg" loading="lazy" onclick="openImageModal('HollowKnightSilksong-Gal.jpg')">
+        <div class="meta">Hollow Knight: Silksong</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="JustDance2015-Gal.jpg" loading="lazy" onclick="openImageModal('JustDance2015-Gal.jpg')">
+        <div class="meta">Just Dance 2015</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="KirbyandtheForgottenLand-Gal.jpg" loading="lazy" onclick="openImageModal('KirbyandtheForgottenLand-Gal.jpg')">
+        <div class="meta">Kirby and the Forgotten Land</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="LuigisMansion-Gal.jpg" loading="lazy" onclick="openImageModal('LuigisMansion-Gal.jpg')">
+        <div class="meta">Luigi's Mansion</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="MarioKart64-Gal.jpg" loading="lazy" onclick="openImageModal('MarioKart64-Gal.jpg')">
+        <div class="meta">Mario Kart 64</div>
+      </article>
+      
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="MarioPartySuperstars-Gal.jpg" loading="lazy" onclick="openImageModal('MarioPartySuperstars-Gal.jpg')">
+        <div class="meta">Mario Party Superstars</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="Metroid-Gal.png" loading="lazy" onclick="openImageModal('Metroid-Gal.png')">
+        <div class="meta">Metroid</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="MetroidPrimeRemastered-Gal.jpg" loading="lazy" onclick="openImageModal('MetroidPrimeRemastered-Gal.jpg')">
+        <div class="meta">Metroid Prime Remastered</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="MonsterHunterGenerationsUltimate-Gal.jpg" loading="lazy" onclick="openImageModal('MonsterHunterGenerationsUltimate-Gal.jpg')">
+        <div class="meta">Monster Hunter Generations Ultimate</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="Moonlighter-Gal.jpg" loading="lazy" onclick="openImageModal('Moonlighter-Gal.jpg')">
+        <div class="meta">Moon lighter</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="NintendogsCats-Gal.jpg" loading="lazy" onclick="openImageModal('NintendogsCats-Gal.jpg')">
+        <div class="meta">Nintendogs + Cats</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="Pikmin4-Gal.jpg" loading="lazy" onclick="openImageModal('Pikmin4-Gal.jpg')">
+        <div class="meta">Pikmin 4</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="PokémonBlack-Gal.jpg" loading="lazy" onclick="openImageModal('PokémonBlack-Gal.jpg')">
+        <div class="meta">Pokémon Black</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="PokkénTournamentDX-Gal.jpg" loading="lazy" onclick="openImageModal('PokkénTournamentDX-Gal.jpg')">
+        <div class="meta">Pokkén Tournament DX</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="ResidentEvilRevelations-Gal.jpg" loading="lazy" onclick="openImageModal('ResidentEvilRevelations-Gal.jpg')">
+        <div class="meta">Resident Evil Revelations</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="RiskofRain-Gal.jpg" loading="lazy" onclick="openImageModal('RiskofRain-Gal.jpg')">
+        <div class="meta">Risk of Rain</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="RuneFactory4-Gal.jpg" loading="lazy" onclick="openImageModal('RuneFactory4-Gal.jpg')">
+        <div class="meta">Rune Factory 4</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="ShovelKnightDig-Gal.jpg" loading="lazy" onclick="openImageModal('ShovelKnightDig-Gal.jpg')">
+        <div class="meta">Shovel Knight Dig</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="SlaytheSpire-Gal.jpg" loading="lazy" onclick="openImageModal('SlaytheSpire-Gal.jpg')">
+        <div class="meta">Slay the Spire</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="SuperMarioBros-Gal.jpg" loading="lazy" onclick="openImageModal('SuperMarioBros-Gal.jpg')">
+        <div class="meta">Super Mario Bros.</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="SuperSmashBrosUltimate-Gal.jpg" loading="lazy" onclick="openImageModal('SuperSmashBrosUltimate-Gal.jpg')">
+        <div class="meta">Super Smash Bros. Ultimate</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="Tetris-Gal.jpg" loading="lazy" onclick="openImageModal('Tetris-Gal.jpg')">
+        <div class="meta">Tetris</div>
+      </article>
+
+      <article class="item image-item" data-category="pictures" style="animation-delay:.18s">
+        <img class="thumb-image" src="ZeldaBreathoftheWild-Gal.png" loading="lazy" onclick="openImageModal('ZeldaBreathoftheWild-Gal.png')">
+        <div class="meta">Zelda - Breath of the Wild</div>
+      </article>
+
+
+      <!-- Modal for Image -->
+      <div id="imageModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeImageModal()">&times;</span>
+          <img id="modalImage" src="" alt="Full Image" />
+        </div>
+      </div>
+
+      <!-- Video Item -->
+<article class="item video" data-category="videos" style="animation-delay:.24s">
+  <div class="thumb" onclick="openModal('g3RF89_kfAs')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-1" src="https://img.youtube.com/vi/g3RF89_kfAs/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('LMhOTPe3Aqk')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-2" src="https://img.youtube.com/vi/LMhOTPe3Aqk/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('iIKi_DUJwPY')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-3" src="https://img.youtube.com/vi/iIKi_DUJwPY/maxresdefault.jpg">
+  </div>
+</article>
+
+
+
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('EtdJho8vfUs')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-4" src="https://img.youtube.com/vi/EtdJho8vfUs/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('VFAQPF6a3l8')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-5" src="https://img.youtube.com/vi/VFAQPF6a3l8/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('1psp2t0Zi9o')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-6" src="https://img.youtube.com/vi/1psp2t0Zi9o/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('PgJaqr2CTdc')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-7" src="https://img.youtube.com/vi/PgJaqr2CTdc/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('DMtDNA_kiZ4')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-8" src="https://img.youtube.com/vi/DMtDNA_kiZ4/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('1I70U1_qdGE')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-9" src="https://img.youtube.com/vi/1I70U1_qdGE/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('gvxbjvIdNDg')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-10" src="https://img.youtube.com/vi/gvxbjvIdNDg/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('UAO2urG23S4')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-11" src="https://img.youtube.com/vi/UAO2urG23S4/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('6XGeJwsUP9c')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-12" src="https://img.youtube.com/vi/6XGeJwsUP9c/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('QoqWBSuhElg')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-13" src="https://img.youtube.com/vi/QoqWBSuhElg/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('H3LAkr0ANgw')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-14" src="https://img.youtube.com/vi/H3LAkr0ANgw/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('RSGgCfbYrg0')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-15" src="https://img.youtube.com/vi/RSGgCfbYrg0/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('tKlRN2YpxRE')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-16" src="https://img.youtube.com/vi/tKlRN2YpxRE/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('2jEq0F656aY')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-17" src="https://img.youtube.com/vi/2jEq0F656aY/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('e9OQOJC1QII')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-18" src="https://img.youtube.com/vi/e9OQOJC1QII/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('sLyiEKCpJrg')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-19" src="https://img.youtube.com/vi/sLyiEKCpJrg/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('uBYORdr_TY8')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-20" src="https://img.youtube.com/vi/uBYORdr_TY8/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('UK1Chilp7E0')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-21" src="https://img.youtube.com/vi/UK1Chilp7E0/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('aOHqK57j5HI')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-22" src="https://img.youtube.com/vi/aOHqK57j5HI/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('WLu7e8RZoYc')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-23" src="https://img.youtube.com/vi/WLu7e8RZoYc/maxresdefault.jpg">
+  </div>
+</article>
+
+<article class="item video" data-category="videos" style="animation-delay:.30s">
+  <div class="thumb" onclick="openModal('zw47_q9wbBE')">
+    <!-- Dynamic Thumbnail -->
+    <img id="video-thumbnail-24" src="https://img.youtube.com/vi/zw47_q9wbBE/maxresdefault.jpg">
+  </div>
+</article>
+
+
+
+
+<!-- Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe id="videoIframe" width="848" height="480" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+    </section>
+  </div>
+
+  <!-- Navigation Bar -->
+        <nav>
+          <div>
+            <img src="Navigation.png" alt="" class="Navbar">
+          </div>
+          <div class="NavButtons">
+            <a href="games.html"><button class="games-button">Games</button></a>
+            <a href="gallery.html"><button class="gallery-button">Gallery</button></a>
+            <a href="index.html"><button class="home-button">Home</button></a>
+            <a href="about.html"><button class="about-button">About</button></a>
+            <a href="contact.html"><button class="contact-button">Contact</button></a>
+          </div>
+        </nav>
+
+        
+  <script src="gallery.js"></script>
+</body>
+</html>
+
+

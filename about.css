@@ -1,0 +1,174 @@
+Body{
+    margin: 0;
+    background-image: url(Pokemon2.gif);
+    background-size: cover;
+    /*background: linear-gradient(to bottom,#6246ea , #8f39a6, #b41c36);*/
+}
+/*Content*/
+.about{
+  font-weight: 550;
+  font-size: 36px;
+  color: #ffffffbd;
+  border-left: 4px solid rgb(209, 29, 29);
+  padding-left: 10px;
+  font-family:'Montserrat', sans-serif;   
+  
+}
+.border {
+  display: flex;
+  justify-content: center;  /* Horizontally centers the item */
+  align-items: center;      
+  padding: 20px;
+}
+.History-Container{
+  font-size: 24px;
+  text-align: center;
+  color: rgba(204, 198, 198, 0.952);
+  background-color: #000000ca;
+  width: 900px;
+  margin-left: 18%;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px 40px;
+  font-family:'Montserrat', sans-serif;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.632);
+}
+.Games-Container{
+  text-align: center;
+  font-size: 24px;
+  color: rgba(204, 198, 198, 0.952);
+  background-color: #000000ca;
+  width: 900px;
+  margin-left: 18%;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px 40px;
+  padding-bottom: 30px;
+  font-family:'Montserrat', sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.632);
+}
+.Created-Container{
+  font-size: 24px;
+  text-align: center;
+  color: rgba(204, 198, 198, 0.952);
+  background-color: #000000ca;
+  width: 900px;
+  margin-left: 18%;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px 40px;
+  font-family:'Montserrat', sans-serif;
+}
+.Do-Container{
+  font-size: 24px;
+  text-align: center;
+  color: rgba(204, 198, 198, 0.952);
+  background-color: #000000ca;
+  padding: 20px 40px;
+  width: 900px;
+  margin-left: 18%;
+  border-radius: 20px;
+  margin-top: 50px;
+  font-family:'Montserrat', sans-serif;
+}
+.Owner-Container{
+  text-align: center;
+  color: rgba(204, 198, 198, 0.952);
+  background-color: #000000ca;
+  padding: 20px 40px;
+  width: 1000px;
+  margin-left: 16%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.Lister{
+  list-style-position: inside;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+/*Navigation Bar*/
+.Navbar{
+  position: fixed;
+  bottom: 20px;
+  left: 35.3%;
+  width: 450px;
+}
+.NavButtons{
+  position: fixed;
+  bottom: 33px;
+  left: 35%;
+  opacity: 0
+}
+.games-button{
+  width: 48px;
+  height: 35px;
+  margin-left: 32px;
+}
+.gallery-button{
+  width: 50px;
+  height: 35px; 
+  margin-left: 23px;
+}
+.home-button{
+  width: 81px;
+  height: 81px; 
+  margin-left: 24px;
+  border-radius: 50%;
+}
+.about-button{
+  width: 43px;
+  height: 35px; 
+  margin-left: 27px;
+}
+.contact-button{
+  width: 40px;
+  height: 35px; 
+  margin-left: 26px;
+}
+.footer{
+  background-color: black;
+  opacity: 0.2;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  bottom: -49px;
+}
+/*ICONSSSSSS*/
+.icons{
+  display: flex;
+  align-items: center;
+  bottom: -6px;
+  left: 0;
+}
+.FBicon {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+.IGicon {
+  margin-left: 10px;
+  width: 55px;
+  height: 30px;
+}
+.TGicon {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+.DCicon {
+  margin-left: 10px;
+  width: 63px;
+  height: 44px;
+}
+.Redditicon {
+  width: 48px;
+  height: 48px;
+}
+.ps-text {
+  font-size: 14px;
+  color: white;
+  margin-left: 1250px;
+}
